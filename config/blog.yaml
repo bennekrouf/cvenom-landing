@@ -1,0 +1,11 @@
+blog:
+  posts_per_page: 12
+  supported_languages:
+    - en
+    - fr
+  default_language: en
+  categories:
+    - Tips
+    - Career Advice
+    - Product Updates
+    - Industry News
