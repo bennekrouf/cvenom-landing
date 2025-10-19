@@ -8,6 +8,7 @@ import Features from '../../components/Features';
 import Stats from '../../components/Stats';
 import CTA from '../../components/CTA';
 import Footer from '../../components/Footer';
+import { FloatingWhatsApp } from '../../components/WhatsApp';
 
 export default function Home() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -55,6 +56,7 @@ export default function Home() {
       <Stats t={t} />
       <CTA t={t} />
       <Footer t={t} />
+      <FloatingWhatsApp />
     </div>
   );
 }
