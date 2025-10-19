@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "features": "Features",
+    "blog": "Blog",
+    "tryDemo": "Try Demo"
+  },
+  "hero": {
+    "title": "Your AI-Powered CV Sidekick",
+    "subtitle": "Transform CV chaos into career confidence. Multilingual, AI-driven, ATS-optimized.",
+    "cta": "Try Studio",
+    "studio": "Launch Studio"
+  },
+  "features": {
+    "title": "Why Cvenom?",
+    "subtitle": "Because job hunting shouldn't feel like herding cats",
+    "items": [
+      {
+        "title": "Smart Adaptation",
+        "desc": "AI scans job descriptions and tailors your CV instantly. ATS-optimized, keyword-perfect."
+      },
+      {
+        "title": "Bilingual Brilliance",
+        "desc": "Full English & French support. Spanish, German coming soon. Cultural nuances included."
+      },
+      {
+        "title": "Job Match AI",
+        "desc": "Instant fit score with actionable insights. Know your chances before hitting send."
+      },
+      {
+        "title": "Cvenom Chat",
+        "desc": "Command your CV with natural language. 'Adapt for this role in French'—done."
+      },
+      {
+        "title": "Export Magic",
+        "desc": "PDF, Word, LaTeX. Professional templates that pop on any screen."
+      },
+      {
+        "title": "Seamless Connections",
+        "desc": "Link LinkedIn, Indeed profiles. Drag-and-drop existing CVs. No formatting nightmares."
+      }
+    ]
+  },
+  "stats": {
+    "title": "Trusted by Job Seekers Worldwide",
+    "users": "Active Users",
+    "countries": "Countries",
+    "growth": "Monthly Growth",
+    "time": "Hours Saved/Week"
+  },
+  "cta": {
+    "title": "Ready to Optimize Your CV?",
+    "subtitle": "Join 1,000+ professionals using AI-powered CV optimization",
+    "button": "Try Studio"
+  },
+  "footer": {
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "studio": "Studio",
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved."
+  }
+}

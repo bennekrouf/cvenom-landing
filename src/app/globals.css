@@ -1,26 +1,137 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+    --primary: 24 100% 50%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --border: 214.3 31.8% 91.4%;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --primary: 24 100% 50%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --border: 217.2 32.6% 17.5%;
+  }
+  
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: system-ui, -apple-system, sans-serif;
+    transition: background-color 150ms, color 150ms;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  user-select: none;
+}
+
+input, textarea, select, button, [contenteditable="true"], [contenteditable=""],
+.prose, .prose *, .selectable, .selectable *, pre, code, pre *, code * {
+  user-select: text;
+}
+
+.section-accent {
+  @apply py-20 bg-accent/30;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-center mb-12;
+}
+
+.grid-stats {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-8 text-center;
+}
+
+.stat-value {
+  @apply text-4xl md:text-5xl font-bold text-primary mb-2;
+}
+
+.stat-label {
+  @apply text-muted-foreground;
+}
+
+.section {
+  @apply py-20;
+}
+
+.section-gradient {
+  @apply py-32 bg-gradient-to-b from-background to-accent/30;
+}
+
+.hero-title {
+  @apply text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text;
+}
+
+.hero-subtitle {
+  @apply text-xl md:text-2xl mb-12 text-muted-foreground max-w-3xl mx-auto;
+}
+
+.btn-primary {
+  @apply px-8 py-3 rounded-lg bg-[#FF6B00] text-white font-semibold hover:bg-[#FF6B00]/90 transition-all inline-block;
+}
+
+.btn-secondary {
+  @apply px-8 py-3 rounded-lg border-2 border-[#FF6B00] text-[#FF6B00] font-semibold hover:bg-[#FF6B00]/10 transition-all inline-block;
+}
+
+.container {
+  @apply max-w-7xl;
+}
+
+.footer {
+  @apply py-12 border-t border-border;
+}
+
+.grid-footer {
+  @apply grid md:grid-cols-4 gap-8 mb-8;
+}
+
+.footer-title {
+  @apply font-bold mb-4;
+}
+
+.footer-link {
+  @apply text-muted-foreground hover:text-foreground transition-colors;
+}
+
+.footer-bottom {
+  @apply text-center text-muted-foreground pt-8 border-t border-border;
+}
+
+.nav-container {
+  @apply sticky top-0 z-40 w-full border-b border-border bg-background/95 backdrop-blur-sm;
+}
+
+.nav-inner {
+  @apply container mx-auto px-4 flex h-16 items-center justify-between;
+}
+
+.nav-logo {
+  @apply font-bold text-xl text-foreground hover:text-primary transition-colors;
+}
+
+.theme-toggle {
+  @apply rounded-full p-2 bg-accent hover:bg-accent/80 transition-colors;
+}
+
+.card {
+  @apply bg-background border border-border rounded-2xl p-6 hover:shadow-xl transition-all;
+}
+
+.card-title {
+  @apply text-xl font-bold mb-3;
+}
+
+.card-description {
+  @apply text-muted-foreground;
 }

@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "blog": "Blog",
+    "tryDemo": "Essayer"
+  },
+  "hero": {
+    "title": "Votre Assistant CV Alimenté par IA",
+    "subtitle": "Transformez le chaos du CV en confiance professionnelle. Multilingue, optimisé ATS.",
+    "cta": "Essayer le Studio",
+    "studio": "Ouvrir le Studio"
+  },
+  "features": {
+    "title": "Pourquoi Cvenom?",
+    "subtitle": "Parce que chercher un emploi ne devrait pas être un casse-tête",
+    "items": [
+      {
+        "title": "Adaptation Intelligente",
+        "desc": "L'IA analyse les offres et personnalise votre CV instantanément. Optimisé ATS."
+      },
+      {
+        "title": "Excellence Bilingue",
+        "desc": "Support complet anglais & français. Espagnol, allemand bientôt. Nuances culturelles incluses."
+      },
+      {
+        "title": "IA de Correspondance",
+        "desc": "Score de compatibilité instantané avec conseils. Connaissez vos chances avant d'envoyer."
+      },
+      {
+        "title": "Chat Cvenom",
+        "desc": "Commandez votre CV en langage naturel. 'Adapter pour ce poste en français'—fait."
+      },
+      {
+        "title": "Export Magique",
+        "desc": "PDF, Word, LaTeX. Templates professionnels qui marquent les esprits."
+      },
+      {
+        "title": "Connexions Faciles",
+        "desc": "Liez LinkedIn, Indeed. Glissez-déposez vos CV existants. Sans complications."
+      }
+    ]
+  },
+  "stats": {
+    "title": "Approuvé par des Chercheurs d'Emploi Mondiaux",
+    "users": "Utilisateurs Actifs",
+    "countries": "Pays",
+    "growth": "Croissance Mensuelle",
+    "time": "Heures Économisées/Semaine"
+  },
+  "cta": {
+    "title": "Prêt à Optimiser Votre CV?",
+    "subtitle": "Rejoignez 1000+ professionnels utilisant l'optimisation CV par IA",
+    "button": "Essayer le Studio"
+  },
+  "footer": {
+    "product": "Produit",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "studio": "Studio",
+    "company": "Entreprise",
+    "about": "À Propos",
+    "blog": "Blog",
+    "contact": "Contact",
+    "legal": "Légal",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "rights": "Tous droits réservés."
+  }
+}
