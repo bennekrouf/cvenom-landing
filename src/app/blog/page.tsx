@@ -3,18 +3,23 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { BlogPost } from '../../../lib/types';
-import { Moon, Sun } from 'lucide-react';
+import { useTranslation } from '../../../lib/i18n';
+import Navigation from '../../../components/Navigation';
 
 export default function Blog() {
   const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [lang, setLang] = useState<'en' | 'fr'>('en');
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [lang, setLang] = useState<'en' | 'fr'>('en');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const t = useTranslation(lang);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('cvenom-theme') || 'light';
-    const savedLang = localStorage.getItem('cvenom-lang') || 'en';
-    setTheme(savedTheme as 'light' | 'dark');
-    setLang(savedLang as 'en' | 'fr');
+    setMounted(true);
+    const savedTheme = (localStorage.getItem('cvenom-theme') as 'light' | 'dark') || 'light';
+    const savedLang = (localStorage.getItem('cvenom-lang') as 'en' | 'fr') || 'en';
+    setTheme(savedTheme);
+    setLang(savedLang);
     document.documentElement.classList.toggle('dark', savedTheme === 'dark');
   }, []);
 
@@ -37,40 +42,19 @@ export default function Blog() {
     localStorage.setItem('cvenom-lang', newLang);
   };
 
+  if (!mounted) return null;
+
   return (
     <div className="min-h-screen">
-      {/* Simple Header */}
-      <nav className="nav-container">
-        <div className="nav-inner">
-          <Link href="/" className="nav-logo">cvenom</Link>
-
-          <div className="flex items-center gap-4">
-            {/* Language Switch */}
-            <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-accent">
-              <button
-                onClick={() => changeLang('en')}
-                className={`px-2 py-1 rounded text-sm font-medium transition-colors ${lang === 'en' ? 'text-[#FF6B00]' : 'text-muted-foreground hover:text-foreground'
-                  }`}
-              >
-                EN
-              </button>
-              <span className="text-muted-foreground">|</span>
-              <button
-                onClick={() => changeLang('fr')}
-                className={`px-2 py-1 rounded text-sm font-medium transition-colors ${lang === 'fr' ? 'text-[#FF6B00]' : 'text-muted-foreground hover:text-foreground'
-                  }`}
-              >
-                FR
-              </button>
-            </div>
-
-            {/* Theme Toggle */}
-            <button onClick={toggleTheme} className="theme-toggle">
-              {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
-            </button>
-          </div>
-        </div>
-      </nav>
+      <Navigation
+        lang={lang}
+        theme={theme}
+        onLangChange={changeLang}
+        onThemeChange={toggleTheme}
+        t={t}
+        mobileMenuOpen={mobileMenuOpen}
+        setMobileMenuOpen={setMobileMenuOpen}
+      />
 
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-4">

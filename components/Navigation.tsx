@@ -67,7 +67,6 @@ export default function Navigation({
                   EN English
                 </button>
 
-                <Link href="/contact" className="block py-2 text-foreground" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                 <button
                   onClick={() => { onLangChange('fr'); setShowLangMenu(false); }}
                   className={`w-full text-left px-3 py-2 text-sm hover:bg-accent transition-colors ${lang === 'fr' ? 'text-primary' : 'text-foreground'}`}
