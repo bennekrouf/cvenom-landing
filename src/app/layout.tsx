@@ -1,6 +1,7 @@
 import './globals.css'
 import { ReactNode } from 'react'
 import { Metadata } from 'next'
+import PlausibleProvider from 'next-plausible'
 
 export const metadata: Metadata = {
   title: 'Cvenom - AI-Powered CV Sidekick',
@@ -14,14 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <script
-          defer
-          data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
-          src="https://plausible.io/js/script.outbound-links.js"
-        />
-      </head>
-      <body>{children}</body>
+      <head />
+      <body>
+        <PlausibleProvider domain="cvenom.com">
+          {children}
+        </PlausibleProvider>
+      </body>
     </html>
   )
 }
