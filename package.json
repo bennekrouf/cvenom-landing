@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 4004 --turbopack",
-    "build": "next build && node scripts/generate-sitemap.js",
-    "prebuild": "node scripts/generate-blog-data.js",
+    "build": "yarn sitemap && next build --turbopack",
     "start": "next start -p 4004",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
