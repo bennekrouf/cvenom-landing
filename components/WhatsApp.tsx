@@ -11,7 +11,7 @@ interface WhatsAppButtonProps {
 }
 
 export const WhatsAppButton = ({
-  number = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890",
+  number = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+41764837540",
   message = "Hello, I'd like to learn more about Cvenom's AI-powered CV optimization.",
   className = "",
   children = "Contact via WhatsApp",
@@ -45,7 +45,7 @@ export const WhatsAppButton = ({
 };
 
 export const FloatingWhatsApp = () => {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+41764837540";
   const whatsappMessage = "Hello, I'm interested in Cvenom's AI-powered CV optimization. Can you help me?";
   const encodedMessage = encodeURIComponent(whatsappMessage);
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
