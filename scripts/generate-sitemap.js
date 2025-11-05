@@ -11,6 +11,24 @@ const staticRoutes = [
   { path: '/terms', priority: 0.5, changefreq: 'yearly' },
 ];
 
+const urls = [
+  {
+    url: 'https://cvenom.com',
+    alternates: [
+      { href: 'https://cvenom.com', hreflang: 'en' },
+      { href: 'https://cvenom.com/fr', hreflang: 'fr' },
+      { href: 'https://cvenom.com', hreflang: 'x-default' }
+    ]
+  },
+  {
+    url: 'https://cvenom.com/fr',
+    alternates: [
+      { href: 'https://cvenom.com', hreflang: 'en' },
+      { href: 'https://cvenom.com/fr', hreflang: 'fr' },
+    ]
+  }
+]
+
 function generateSitemap() {
   const blogDir = path.join(process.cwd(), 'content/blog');
   let blogPosts = [];
