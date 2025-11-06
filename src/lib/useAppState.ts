@@ -10,7 +10,7 @@ export function useAppState() {
   useEffect(() => {
     setMounted(true);
     const savedTheme = (localStorage.getItem('cvenom-theme') as 'light' | 'dark') || 'light';
-    const savedLang = (localStorage.getItem('cvenom-lang') as 'en' | 'fr') || 'en';
+    const savedLang = (localStorage.getItem('language') as 'en' | 'fr') || 'en';
     setTheme(savedTheme);
     setLang(savedLang);
     document.documentElement.classList.toggle('dark', savedTheme === 'dark');
