@@ -6,7 +6,7 @@ export default function Features() {
   const t = useTranslation(lang);
 
   return (
-    <section className="section">
+    <section className="section" id="features">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="section-title">{t.features.title}</h2>
