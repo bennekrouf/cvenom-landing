@@ -1,42 +1,19 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { FloatingWhatsApp } from '@/components/WhatsApp';
+import Hero from '@/components/Hero';
+import Features from '@/components/Features';
+import Stats from '@/components/Stats';
+import CTA from '@/components/CTA';
+import Navigation from '@/components/Navigation';
 import { useTranslation } from '../../lib/i18n';
-import Navigation from '../../components/Navigation';
-import Hero from '../../components/Hero';
-import Features from '../../components/Features';
-import Stats from '../../components/Stats';
-import CTA from '../../components/CTA';
-import Footer from '../../components/Footer';
-import { FloatingWhatsApp } from '../../components/WhatsApp';
+import { useAppState } from '@/lib/useAppState';
+import Footer from '@/components/Footer';
 
 export default function Home() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
-  const [lang, setLang] = useState<'en' | 'fr'>('en');
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+
+  const { theme, lang, mobileMenuOpen, mounted, setMobileMenuOpen, toggleTheme, changeLang } = useAppState();
   const t = useTranslation(lang);
-
-  useEffect(() => {
-    setMounted(true);
-    const savedTheme = (localStorage.getItem('cvenom-theme') as 'light' | 'dark') || 'light';
-    const savedLang = (localStorage.getItem('cvenom-lang') as 'en' | 'fr') || 'en';
-    setTheme(savedTheme);
-    setLang(savedLang);
-    document.documentElement.classList.toggle('dark', savedTheme === 'dark');
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('cvenom-theme', newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
-  };
-
-  const changeLang = (newLang: 'en' | 'fr') => {
-    setLang(newLang);
-    localStorage.setItem('cvenom-lang', newLang);
-  };
 
   if (!mounted) return null;
 
@@ -51,12 +28,12 @@ export default function Home() {
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
       />
-      <Hero t={t} />
-      <Features t={t} />
-      <Stats t={t} />
-      <CTA t={t} />
-      <Footer t={t} />
+      <Hero />
+      <Features />
+      <Stats />
+      <CTA />
       <FloatingWhatsApp />
+      <Footer t={t} />
     </div>
   );
 }

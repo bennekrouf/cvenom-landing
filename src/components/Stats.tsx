@@ -1,6 +1,10 @@
-import { Translations } from '../lib/types';
+import { useAppState } from '@/lib/useAppState';
+import { useTranslation } from '../../lib/i18n';
 
-export default function Stats({ t }: { t: Translations }) {
+export default function Stats() {
+  const { lang } = useAppState();
+  const t = useTranslation(lang);
+
   const stats = [
     { value: "1,000+", label: t.stats.users },
     { value: "20+", label: t.stats.countries },

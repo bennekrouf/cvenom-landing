@@ -57,4 +57,80 @@ export interface Translations {
     terms: string;
     rights: string;
   };
+  privacy: {
+    title: string;
+    lastUpdated: string;
+    sections: {
+      introduction: {
+        title: string;
+        content: string;
+      };
+      dataCollection: {
+        title: string;
+        intro: string;
+        items: string[];
+      };
+      dataUse: {
+        title: string;
+        intro: string;
+        items: string[];
+      };
+      dataProtection: {
+        title: string;
+        content: string;
+      };
+      dataSharing: {
+        title: string;
+        content: string;
+      };
+      userRights: {
+        title: string;
+        intro: string;
+        items: string[];
+      };
+      contact: {
+        title: string;
+        content: string;
+      };
+    };
+  };
+  terms: {
+    title: string;
+    lastUpdated: string;
+    sections: {
+      acceptance: {
+        title: string;
+        content: string;
+      };
+      services: {
+        title: string;
+        content: string;
+      };
+      userResponsibilities: {
+        title: string;
+        intro: string;
+        items: string[];
+      };
+      intellectualProperty: {
+        title: string;
+        content: string;
+      };
+      limitation: {
+        title: string;
+        content: string;
+      };
+      termination: {
+        title: string;
+        content: string;
+      };
+      governing: {
+        title: string;
+        content: string;
+      };
+      contact: {
+        title: string;
+        content: string;
+      };
+    };
+  };
 }

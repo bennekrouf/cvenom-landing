@@ -1,39 +1,16 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useTranslation } from '../../../lib/i18n';
-import Navigation from '../../../components/Navigation';
-import ContactForm from '../../../components/ContactForm';
-import { WhatsAppButton } from '../../../components/WhatsApp';
 import { FiMail, FiMapPin, FiLinkedin } from 'react-icons/fi';
+import { useAppState } from '@/lib/useAppState';
+import { WhatsAppButton } from '@/components/WhatsApp';
+import ContactForm from '@/components/ContactForm';
+import Footer from '@/components/Footer';
+import Navigation from '@/components/Navigation';
+import { useTranslation } from '../../../lib/i18n';
 
 export default function Contact() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
-  const [lang, setLang] = useState<'en' | 'fr'>('en');
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const { theme, lang, mobileMenuOpen, mounted, setMobileMenuOpen, toggleTheme, changeLang } = useAppState();
   const t = useTranslation(lang);
-
-  useEffect(() => {
-    setMounted(true);
-    const savedTheme = (localStorage.getItem('cvenom-theme') as 'light' | 'dark') || 'light';
-    const savedLang = (localStorage.getItem('cvenom-lang') as 'en' | 'fr') || 'en';
-    setTheme(savedTheme);
-    setLang(savedLang);
-    document.documentElement.classList.toggle('dark', savedTheme === 'dark');
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('cvenom-theme', newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
-  };
-
-  const changeLang = (newLang: 'en' | 'fr') => {
-    setLang(newLang);
-    localStorage.setItem('cvenom-lang', newLang);
-  };
 
   if (!mounted) return null;
 
@@ -48,7 +25,6 @@ export default function Contact() {
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
       />
-
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -140,6 +116,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <Footer t={t} />
     </div>
   );
 }

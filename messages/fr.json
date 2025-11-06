@@ -7,7 +7,7 @@
   "hero": {
     "title": "Votre Assistant CV Alimenté par IA",
     "subtitle": "Transformez le chaos du CV en confiance professionnelle. Multilingue, optimisé ATS.",
-    "cta": "Essayer le Studio",
+    "cta": "Ouvrir le Studio",
     "studio": "Ouvrir le Studio"
   },
   "features": {
@@ -65,5 +65,105 @@
     "privacy": "Confidentialité",
     "terms": "Conditions",
     "rights": "Tous droits réservés."
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour : 6 novembre 2025",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "Chez Mayorana, nous nous engageons à protéger votre vie privée et à assurer la sécurité de vos informations personnelles. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos données lorsque vous utilisez Cvenom, notre plateforme d'optimisation de CV alimentée par IA."
+      },
+      "dataCollection": {
+        "title": "Informations que Nous Collectons",
+        "intro": "Nous collectons les types d'informations suivants pour fournir et améliorer nos services :",
+        "items": [
+          "Données de CV et curriculum vitae que vous téléchargez ou saisissez dans notre plateforme",
+          "Informations de compte incluant votre nom, adresse e-mail et détails de profil",
+          "Données d'utilisation et analytiques pour améliorer les performances de notre service",
+          "Informations techniques telles que l'adresse IP, le type de navigateur et les informations d'appareil",
+          "Données de communication lorsque vous contactez notre équipe de support"
+        ]
+      },
+      "dataUse": {
+        "title": "Comment Nous Utilisons Vos Informations",
+        "intro": "Nous utilisons vos données personnelles aux fins suivantes :",
+        "items": [
+          "Fournir des services d'optimisation de CV et de correspondance d'emploi alimentés par IA",
+          "Améliorer nos algorithmes IA et la fonctionnalité de la plateforme",
+          "Communiquer avec vous concernant votre compte et nos services",
+          "Fournir un support client et répondre à vos demandes",
+          "Assurer la sécurité de la plateforme et prévenir les activités frauduleuses"
+        ]
+      },
+      "dataProtection": {
+        "title": "Protection et Sécurité des Données",
+        "content": "Nous mettons en place des mesures de sécurité standard de l'industrie pour protéger vos données personnelles. Vos données de CV sont chiffrées en transit et au repos. Seul le personnel d'administration autorisé a accès aux données personnelles, et nous auditionnons régulièrement nos pratiques de sécurité pour nous assurer que vos informations restent protégées."
+      },
+      "dataSharing": {
+        "title": "Partage et Divulgation des Données",
+        "content": "Nous ne partageons, ne vendons, ni n'exploitons vos données personnelles avec des tiers. Nous n'utilisons pas vos données de CV pour l'entraînement IA ou toute autre fin au-delà de la fourniture de nos services principaux. Vos données restent confidentielles et sont utilisées uniquement pour optimiser votre CV et améliorer votre expérience de recherche d'emploi."
+      },
+      "userRights": {
+        "title": "Vos Droits",
+        "intro": "En tant qu'utilisateur de notre plateforme, vous avez les droits suivants concernant vos données personnelles :",
+        "items": [
+          "Droit d'accéder et d'examiner toutes les données personnelles que nous avons collectées sur vous",
+          "Droit de demander la correction de toute information inexacte ou incomplète",
+          "Droit de demander la suppression complète de votre compte et de toutes les données associées",
+          "Droit à la portabilité des données - recevoir vos données dans un format structuré et lisible par machine",
+          "Droit de retirer votre consentement à tout moment pour les activités de traitement des données"
+        ]
+      },
+      "contact": {
+        "title": "Nous Contacter",
+        "content": "Si vous avez des questions concernant cette Politique de Confidentialité ou souhaitez exercer vos droits sur les données, veuillez nous contacter à privacy@cvenom.com. En tant qu'entreprise suisse, nous nous conformons aux réglementations suisses de protection des données et nous nous engageons à traiter rapidement toute préoccupation relative à la confidentialité."
+      }
+    }
+  },
+  "terms": {
+    "title": "Conditions d'Utilisation",
+    "lastUpdated": "Dernière mise à jour : 6 novembre 2025",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptation des Conditions",
+        "content": "En accédant et en utilisant Cvenom, exploité par Mayorana (une entreprise suisse), vous acceptez d'être lié par ces Conditions d'Utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre plateforme."
+      },
+      "services": {
+        "title": "Description des Services",
+        "content": "Cvenom fournit des services d'optimisation de CV alimentés par IA, incluant l'adaptation automatisée de CV, la correspondance d'emploi, l'optimisation ATS, et des outils connexes d'amélioration de carrière. Nos services sont conçus pour vous aider à améliorer votre succès de recherche d'emploi grâce au traitement intelligent de documents et aux algorithmes de correspondance."
+      },
+      "userResponsibilities": {
+        "title": "Responsabilités de l'Utilisateur",
+        "intro": "En tant qu'utilisateur de notre plateforme, vous acceptez de :",
+        "items": [
+          "Fournir des informations exactes et véridiques dans votre CV et profil",
+          "Utiliser nos services uniquement à des fins légitimes de recherche d'emploi et de développement de carrière",
+          "Respecter les droits de propriété intellectuelle et ne pas abuser de notre technologie IA",
+          "Maintenir la confidentialité de vos identifiants de compte",
+          "Respecter toutes les lois et réglementations applicables lors de l'utilisation de nos services"
+        ]
+      },
+      "intellectualProperty": {
+        "title": "Propriété Intellectuelle",
+        "content": "Tous les droits de propriété intellectuelle de notre plateforme, y compris nos algorithmes IA, logiciels et technologies connexes, restent la propriété exclusive de Mayorana. Vous conservez la propriété du contenu de votre CV, tout en nous accordant une licence limitée pour le traiter et l'optimiser dans le but de fournir nos services."
+      },
+      "limitation": {
+        "title": "Limitation de Responsabilité",
+        "content": "Nos services sont fournis 'en l'état' sans garanties d'aucune sorte. Nous ne sommes pas responsables des résultats de recherche d'emploi, des résultats d'entretien ou des décisions d'emploi. Notre responsabilité est limitée aux frais payés pour nos services, et nous excluons la responsabilité pour tous dommages indirects, consécutifs ou punitifs."
+      },
+      "termination": {
+        "title": "Résiliation",
+        "content": "Nous nous réservons le droit de résilier ou de suspendre votre compte à notre discrétion, particulièrement en cas de violations des conditions ou d'abus de notre plateforme. Vous pouvez résilier votre compte à tout moment, et lors de la résiliation, nous supprimerons vos données personnelles conformément à notre Politique de Confidentialité."
+      },
+      "governing": {
+        "title": "Droit Applicable",
+        "content": "Ces Conditions d'Utilisation sont régies par le droit suisse. Tout différend découlant de ces conditions ou de votre utilisation de nos services sera soumis à la juridiction exclusive des tribunaux suisses. En tant qu'entreprise suisse, nous opérons sous les réglementations suisses de protection des données et de protection des consommateurs."
+      },
+      "contact": {
+        "title": "Informations de Contact",
+        "content": "Pour toute question concernant ces Conditions d'Utilisation, veuillez nous contacter à legal@cvenom.com. Nous nous engageons à traiter toute préoccupation concernant nos conditions et à assurer une relation transparente avec nos utilisateurs."
+      }
+    }
   }
 }

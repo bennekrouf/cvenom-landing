@@ -2,12 +2,12 @@
   "nav": {
     "features": "Features",
     "blog": "Blog",
-    "tryDemo": "Try Demo"
+    "tryDemo": "Launch Studio"
   },
   "hero": {
     "title": "Your AI-Powered CV Sidekick",
     "subtitle": "Transform CV chaos into career confidence. Multilingual, AI-driven, ATS-optimized.",
-    "cta": "Try Studio",
+    "cta": "Launch Studio",
     "studio": "Launch Studio"
   },
   "features": {
@@ -65,5 +65,105 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "rights": "All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: November 6, 2025",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "At Mayorana, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and protect your data when you use Cvenom, our AI-powered CV optimization platform."
+      },
+      "dataCollection": {
+        "title": "Information We Collect",
+        "intro": "We collect the following types of information to provide and improve our services:",
+        "items": [
+          "CV and resume data that you upload or input into our platform",
+          "Account information including your name, email address, and profile details",
+          "Usage data and analytics to improve our service performance",
+          "Technical information such as IP address, browser type, and device information",
+          "Communication data when you contact our support team"
+        ]
+      },
+      "dataUse": {
+        "title": "How We Use Your Information",
+        "intro": "We use your personal data for the following purposes:",
+        "items": [
+          "Providing AI-powered CV optimization and job matching services",
+          "Improving our AI algorithms and platform functionality",
+          "Communicating with you about your account and our services",
+          "Providing customer support and responding to your inquiries",
+          "Ensuring platform security and preventing fraudulent activities"
+        ]
+      },
+      "dataProtection": {
+        "title": "Data Protection and Security",
+        "content": "We implement industry-standard security measures to protect your personal data. Your CV data is encrypted both in transit and at rest. Only authorized administration personnel have access to personal data, and we regularly audit our security practices to ensure your information remains protected."
+      },
+      "dataSharing": {
+        "title": "Data Sharing and Disclosure",
+        "content": "We do not share, sell, or exploit your personal data with third parties. We do not use your CV data for AI training or any other purpose beyond providing our core services. Your data remains confidential and is used solely to optimize your CV and improve your job search experience."
+      },
+      "userRights": {
+        "title": "Your Rights",
+        "intro": "As a user of our platform, you have the following rights regarding your personal data:",
+        "items": [
+          "Right to access and review all personal data we have collected about you",
+          "Right to request correction of any inaccurate or incomplete information",
+          "Right to request complete deletion of your account and all associated data",
+          "Right to data portability - receive your data in a structured, machine-readable format",
+          "Right to withdraw consent at any time for data processing activities"
+        ]
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this Privacy Policy or wish to exercise your data rights, please contact us at privacy@cvenom.com. As a Swiss company, we comply with Swiss data protection regulations and are committed to addressing any privacy concerns promptly."
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: November 6, 2025",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing and using Cvenom, operated by Mayorana (a Swiss company), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our platform."
+      },
+      "services": {
+        "title": "Description of Services",
+        "content": "Cvenom provides AI-powered CV optimization services, including automated CV adaptation, job matching, ATS optimization, and related career enhancement tools. Our services are designed to help you improve your job search success through intelligent document processing and matching algorithms."
+      },
+      "userResponsibilities": {
+        "title": "User Responsibilities",
+        "intro": "As a user of our platform, you agree to:",
+        "items": [
+          "Provide accurate and truthful information in your CV and profile",
+          "Use our services only for legitimate job search and career development purposes",
+          "Respect intellectual property rights and not misuse our AI technology",
+          "Maintain the confidentiality of your account credentials",
+          "Comply with all applicable laws and regulations when using our services"
+        ]
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "content": "All intellectual property rights in our platform, including our AI algorithms, software, and related technologies, remain the exclusive property of Mayorana. You retain ownership of your CV content, while granting us a limited license to process and optimize it for the purpose of providing our services."
+      },
+      "limitation": {
+        "title": "Limitation of Liability",
+        "content": "Our services are provided 'as is' without warranties of any kind. We are not liable for any job search outcomes, interview results, or employment decisions. Our liability is limited to the fees paid for our services, and we exclude liability for any indirect, consequential, or punitive damages."
+      },
+      "termination": {
+        "title": "Termination",
+        "content": "We reserve the right to terminate or suspend your account at our discretion, particularly in cases of terms violations or misuse of our platform. You may terminate your account at any time, and upon termination, we will delete your personal data in accordance with our Privacy Policy."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These Terms of Service are governed by Swiss law. Any disputes arising from these terms or your use of our services will be subject to the exclusive jurisdiction of Swiss courts. As a Swiss company, we operate under Swiss data protection and consumer protection regulations."
+      },
+      "contact": {
+        "title": "Contact Information",
+        "content": "For any questions regarding these Terms of Service, please contact us at legal@cvenom.com. We are committed to addressing any concerns about our terms and ensuring a transparent relationship with our users."
+      }
+    }
   }
 }

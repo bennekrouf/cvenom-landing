@@ -1,4 +1,4 @@
-import { Translations } from '../lib/types';
+import { Translations } from "../../lib/types";
 
 export default function Footer({ t }: { t: Translations }) {
   return (
