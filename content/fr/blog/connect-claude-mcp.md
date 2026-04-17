@@ -59,4 +59,4 @@ Le connecteur MCP fonctionne sur **Claude.ai mobile** (iOS & Android) de la mêm
 
 ---
 
-Des questions ? Contactez-nous à [hello@cvenom.com](mailto:hello@cvenom.com)
+Des questions ? Contactez-nous à [mb@mayorana.ch](mailto:mb@mayorana.ch)

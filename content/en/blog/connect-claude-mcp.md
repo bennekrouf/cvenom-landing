@@ -59,4 +59,4 @@ The MCP connector works on **Claude.ai mobile** (iOS & Android) the same way —
 
 ---
 
-Questions? Reach us at [hello@cvenom.com](mailto:hello@cvenom.com)
+Questions? Reach us at [mb@mayorana.ch](mailto:mb@mayorana.ch)
