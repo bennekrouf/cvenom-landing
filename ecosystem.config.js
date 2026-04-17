@@ -4,12 +4,16 @@ module.exports = {
         script: 'npm',
         args: 'start',
         instances: 1,
-        autorestart: true,
-        watch: false,
-        max_memory_restart: '1G',
+        exec_mode: 'fork',
         env: {
             NODE_ENV: 'production',
-            PORT: 4004
-        }
+            PORT: 4004,
+            CONFIG_PATH: './config.yaml'
+        },
+        error_file: './logs/cvenom-landing-error.log',
+        out_file: './logs/cvenom-landing-out.log',
+        log_file: './logs/cvenom-landing-combined.log',
+        time: true,
+        max_memory_restart: '500M'
     }]
 };
