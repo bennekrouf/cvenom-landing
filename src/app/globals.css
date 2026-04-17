@@ -150,7 +150,8 @@ input, textarea, select, button, [contenteditable="true"], [contenteditable=""],
 .blog-content pre code { @apply bg-transparent p-0; }
 .blog-content a { @apply text-primary underline underline-offset-2 hover:opacity-80; }
 .blog-content blockquote { @apply border-l-4 border-primary pl-4 italic text-muted-foreground my-4; }
-.blog-content table { @apply w-full border-collapse my-6; }
-.blog-content td, .blog-content th { @apply border border-border px-4 py-2 text-left; }
-.blog-content th { @apply bg-muted font-semibold; }
+.blog-content table { @apply w-full border-collapse my-6 table-fixed; }
+.blog-content td, .blog-content th { @apply border border-border px-4 py-2 text-left align-top break-words; }
+.blog-content th { @apply bg-muted font-semibold whitespace-nowrap; }
+.blog-content code { @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono break-all; }
 .blog-content hr { @apply border-border my-8; }
