@@ -1,7 +1,8 @@
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 import { redirect } from 'next/navigation';
 import { Metadata } from 'next';
 import SetHtmlLang from '@/components/SetHtmlLang';
+import RefCapture from '@/components/RefCapture';
 
 const supportedLangs = ['en', 'fr'] as const;
 type Lang = typeof supportedLangs[number];
@@ -47,6 +48,9 @@ export default async function LangLayout({ children, params }: Props) {
       <link rel="alternate" hrefLang="en" href="https://cvenom.com/en" />
       <link rel="alternate" hrefLang="fr" href="https://cvenom.com/fr" />
       <link rel="alternate" hrefLang="x-default" href="https://cvenom.com/en" />
+      <Suspense fallback={null}>
+        <RefCapture />
+      </Suspense>
       {children}
     </>
   );
