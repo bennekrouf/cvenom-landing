@@ -5,38 +5,30 @@
     "tryDemo": "Launch Studio"
   },
   "hero": {
-    "title": "Your AI-Powered CV Sidekick",
-    "subtitle": "Transform CV chaos into career confidence. Multilingual, AI-driven, ATS-optimized.",
-    "cta": "Launch Studio",
+    "title": "Land your next job with the right CV",
+    "subtitle": "AI generates your CV, cover letter, and portfolio — then matches them to any LinkedIn job posting. ATS-optimised. English, French & German.",
+    "cta": "Start free — 100 credits included",
     "studio": "Launch Studio"
   },
   "features": {
-    "title": "Why Cvenom?",
-    "subtitle": "Because job hunting shouldn't feel like herding cats",
+    "title": "Four tools, one platform",
+    "subtitle": "Everything you need from application to interview — all AI-assisted",
     "items": [
       {
-        "title": "Smart Adaptation",
-        "desc": "AI scans job descriptions and tailors your CV instantly. ATS-optimized, keyword-perfect."
+        "title": "📄 CV Generator",
+        "desc": "Pick a template, fill your profile once, download a polished ATS-ready PDF in seconds. Reuse it for every application."
       },
       {
-        "title": "Bilingual Brilliance",
-        "desc": "Full English & French support. Spanish, German coming soon. Cultural nuances included."
+        "title": "✉️ Cover Letter",
+        "desc": "Paste the job description and get a tailored cover letter that speaks directly to the role. One click, ready to send."
       },
       {
-        "title": "Job Match AI",
-        "desc": "Instant fit score with actionable insights. Know your chances before hitting send."
+        "title": "🖼️ Portfolio",
+        "desc": "AI extracts your best projects from your CV and compiles a visual portfolio PDF — no editing needed."
       },
       {
-        "title": "Cvenom Chat",
-        "desc": "Command your CV with natural language. 'Adapt for this role in French'—done."
-      },
-      {
-        "title": "Export Magic",
-        "desc": "PDF, Word, LaTeX. Professional templates that pop on any screen."
-      },
-      {
-        "title": "Seamless Connections",
-        "desc": "Link LinkedIn, Indeed profiles. Drag-and-drop existing CVs. No formatting nightmares."
+        "title": "🔗 LinkedIn Match",
+        "desc": "Paste a LinkedIn job URL. Instantly see your fit score, missing keywords, and exactly what to improve before applying."
       }
     ]
   },
@@ -48,9 +40,26 @@
     "time": "Hours Saved/Week"
   },
   "cta": {
-    "title": "Ready to Optimize Your CV?",
-    "subtitle": "Join 1,000+ professionals using AI-powered CV optimization",
-    "button": "Try Studio"
+    "title": "Ready to stand out?",
+    "subtitle": "Join thousands of candidates who apply smarter with cVenom. Start free — 100 credits included, no card needed.",
+    "button": "Launch Studio free"
+  },
+  "earn": {
+    "badge": "💸 Earn with cVenom",
+    "title": "Help people land jobs. Earn 30% commission.",
+    "subtitle": "Become a cVenom Business Developer. Share your referral link with job seekers, career coaches, or HR professionals. Every credit purchase your referrals make earns you 30% — tracked automatically, paid monthly.",
+    "bullets": [
+      "No selling — just share your unique link",
+      "Real-time dashboard: customers, earnings, history",
+      "30% commission on every credit purchase",
+      "Paid monthly, no minimum threshold"
+    ],
+    "cta": "Get my referral code →",
+    "stats": [
+      { "value": "30%", "label": "Commission rate" },
+      { "value": "~$5", "label": "Avg purchase / customer" },
+      { "value": "~$1.50", "label": "Your cut per customer" }
+    ]
   },
   "footer": {
     "product": "Product",
@@ -64,7 +73,9 @@
     "legal": "Legal",
     "privacy": "Privacy",
     "terms": "Terms",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "earn": "Earn with cVenom",
+    "earnLink": "💸 Earn 30% commission →"
   },
   "privacy": {
     "title": "Privacy Policy",

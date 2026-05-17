@@ -4,6 +4,7 @@ import { use } from 'react';
 import { FloatingWhatsApp } from '@/components/WhatsApp';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
+import Earn from '@/components/Earn';
 import Stats from '@/components/Stats';
 import CTA from '@/components/CTA';
 import Navigation from '@/components/Navigation';
@@ -30,6 +31,7 @@ export default function Home({ params }: { params: Promise<{ lang: 'en' | 'fr' }
       />
       <Hero />
       <Features />
+      <Earn />
       <Stats />
       <CTA />
       <FloatingWhatsApp />

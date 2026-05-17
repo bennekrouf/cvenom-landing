@@ -5,38 +5,30 @@
     "tryDemo": "Essayer"
   },
   "hero": {
-    "title": "Votre Assistant CV Alimenté par IA",
-    "subtitle": "Transformez le chaos du CV en confiance professionnelle. Multilingue, optimisé ATS.",
-    "cta": "Ouvrir le Studio",
+    "title": "Décrochez votre prochain emploi avec le bon CV",
+    "subtitle": "L'IA génère votre CV, lettre de motivation et portfolio — puis les compare à n'importe quelle offre LinkedIn. Optimisé ATS. Français, anglais & allemand.",
+    "cta": "Démarrer gratuitement — 100 crédits inclus",
     "studio": "Ouvrir le Studio"
   },
   "features": {
-    "title": "Pourquoi Cvenom?",
-    "subtitle": "Parce que chercher un emploi ne devrait pas être un casse-tête",
+    "title": "Quatre outils, une seule plateforme",
+    "subtitle": "Tout ce dont vous avez besoin de la candidature à l'entretien — assisté par IA",
     "items": [
       {
-        "title": "Adaptation Intelligente",
-        "desc": "L'IA analyse les offres et personnalise votre CV instantanément. Optimisé ATS."
+        "title": "📄 Générateur de CV",
+        "desc": "Choisissez un modèle, remplissez votre profil une fois, téléchargez un PDF professionnel optimisé ATS en quelques secondes."
       },
       {
-        "title": "Excellence Bilingue",
-        "desc": "Support complet anglais & français. Espagnol, allemand bientôt. Nuances culturelles incluses."
+        "title": "✉️ Lettre de motivation",
+        "desc": "Collez la description du poste et obtenez une lettre de motivation personnalisée prête à envoyer."
       },
       {
-        "title": "IA de Correspondance",
-        "desc": "Score de compatibilité instantané avec conseils. Connaissez vos chances avant d'envoyer."
+        "title": "🖼️ Portfolio",
+        "desc": "L'IA extrait vos meilleurs projets de votre CV et compose un portfolio visuel en PDF — sans aucune édition."
       },
       {
-        "title": "Chat Cvenom",
-        "desc": "Commandez votre CV en langage naturel. 'Adapter pour ce poste en français'—fait."
-      },
-      {
-        "title": "Export Magique",
-        "desc": "PDF, Word, LaTeX. Templates professionnels qui marquent les esprits."
-      },
-      {
-        "title": "Connexions Faciles",
-        "desc": "Liez LinkedIn, Indeed. Glissez-déposez vos CV existants. Sans complications."
+        "title": "🔗 Match LinkedIn",
+        "desc": "Collez une URL LinkedIn. Obtenez instantanément votre score de correspondance, les mots-clés manquants et les points à améliorer."
       }
     ]
   },
@@ -48,9 +40,26 @@
     "time": "Heures Économisées/Semaine"
   },
   "cta": {
-    "title": "Prêt à Optimiser Votre CV?",
-    "subtitle": "Rejoignez 1000+ professionnels utilisant l'optimisation CV par IA",
-    "button": "Essayer le Studio"
+    "title": "Prêt à vous démarquer ?",
+    "subtitle": "Rejoignez des milliers de candidats qui postulent plus intelligemment avec cVenom. Gratuit — 100 crédits inclus, sans carte bancaire.",
+    "button": "Ouvrir le Studio gratuitement"
+  },
+  "earn": {
+    "badge": "💸 Gagnez avec cVenom",
+    "title": "Aidez les gens à trouver un emploi. Gagnez 30% de commission.",
+    "subtitle": "Devenez Business Developer cVenom. Partagez votre lien de parrainage avec des chercheurs d'emploi, coachs carrière ou professionnels RH. Chaque achat de crédits de vos filleuls vous rapporte 30% — suivi automatiquement, versé mensuellement.",
+    "bullets": [
+      "Pas de vente — partagez simplement votre lien unique",
+      "Tableau de bord en temps réel : clients, gains, historique",
+      "30% de commission sur chaque achat de crédits",
+      "Versement mensuel, sans seuil minimum"
+    ],
+    "cta": "Obtenir mon code de parrainage →",
+    "stats": [
+      { "value": "30%", "label": "Taux de commission" },
+      { "value": "~5€", "label": "Achat moyen / client" },
+      { "value": "~1,50€", "label": "Votre part par client" }
+    ]
   },
   "footer": {
     "product": "Produit",
@@ -64,7 +73,9 @@
     "legal": "Légal",
     "privacy": "Confidentialité",
     "terms": "Conditions",
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "earn": "Gagner avec cVenom",
+    "earnLink": "💸 Gagner 30% de commission →"
   },
   "privacy": {
     "title": "Politique de Confidentialité",

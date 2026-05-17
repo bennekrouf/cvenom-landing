@@ -33,8 +33,11 @@ export default function Footer({ t, lang }: FooterProps) {
             </ul>
           </div>
           <div>
-            <h3 className="footer-title">Cvenom</h3>
-            <p className="text-gray-400">cvenom.com</p>
+            <h3 className="footer-title">{t.footer.earn}</h3>
+            <ul className="space-y-2">
+              <li><a href="https://studio.cvenom.com/en/bd" className="footer-link">{t.footer.earnLink}</a></li>
+            </ul>
+            <p className="text-gray-400 mt-4 text-sm">cvenom.com</p>
           </div>
         </div>
         <div className="footer-bottom">

@@ -43,6 +43,14 @@ export interface Translations {
     subtitle: string;
     button: string;
   };
+  earn: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    bullets: string[];
+    cta: string;
+    stats: Array<{ value: string; label: string }>;
+  };
   footer: {
     product: string;
     features: string;
@@ -56,6 +64,8 @@ export interface Translations {
     privacy: string;
     terms: string;
     rights: string;
+    earn: string;
+    earnLink: string;
   };
   privacy: {
     title: string;
