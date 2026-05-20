@@ -14,7 +14,7 @@ export default function Footer({ t, lang }: FooterProps) {
             <h3 className="footer-title">{t.footer.product}</h3>
             <ul className="space-y-2">
               <li><a href={`/${lang}/#features`} className="footer-link">{t.footer.features}</a></li>
-              <li><a href="https://studio.cvenom.com" className="footer-link">{t.footer.studio}</a></li>
+              <li><a href="https://studio.cvenom.com" target="_blank" rel="noopener noreferrer" className="footer-link">{t.footer.studio}</a></li>
             </ul>
           </div>
           <div>
@@ -35,7 +35,7 @@ export default function Footer({ t, lang }: FooterProps) {
           <div>
             <h3 className="footer-title">{t.footer.earn}</h3>
             <ul className="space-y-2">
-              <li><a href="https://studio.cvenom.com/en/bd" className="footer-link">{t.footer.earnLink}</a></li>
+              <li><a href="https://studio.cvenom.com/en/bd" target="_blank" rel="noopener noreferrer" className="footer-link">{t.footer.earnLink}</a></li>
             </ul>
             <p className="text-gray-400 mt-4 text-sm">cvenom.com</p>
           </div>

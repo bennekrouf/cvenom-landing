@@ -14,7 +14,7 @@ export default function Hero() {
         <h1 className="hero-title">{t.hero.title}</h1>
         <p className="hero-subtitle">{t.hero.subtitle}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://studio.cvenom.com" className="btn-primary">
+          <a href="https://studio.cvenom.com" target="_blank" rel="noopener noreferrer" className="btn-primary">
             {t.hero.cta}
           </a>
           <a href="#features" className="btn-secondary">

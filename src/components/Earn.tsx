@@ -28,6 +28,8 @@ export default function Earn() {
             </ul>
             <a
               href="https://studio.cvenom.com/en/bd"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary w-fit mt-2"
             >
               {e.cta}

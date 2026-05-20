@@ -74,7 +74,7 @@ export default function Navigation({
 
           {/* Fixed width container for Launch Studio button */}
           <div className="w-[140px] flex justify-center">
-            <a href="https://studio.cvenom.com" className="px-6 py-2 rounded-lg bg-[#FF6B00] text-white font-semibold hover:bg-[#FF6B00]/90 transition-all whitespace-nowrap flex items-center justify-center min-w-[120px]">
+            <a href="https://studio.cvenom.com" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-lg bg-[#FF6B00] text-white font-semibold hover:bg-[#FF6B00]/90 transition-all whitespace-nowrap flex items-center justify-center min-w-[120px]">
               {t.nav.tryDemo}
             </a>
           </div>
