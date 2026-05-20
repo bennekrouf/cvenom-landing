@@ -1,8 +1,8 @@
-import { useAppState } from '@/lib/useAppState';
+import { useLang } from '@/lib/useLang';
 import { useTranslation } from '../../lib/i18n';
 
 export default function Hero() {
-  const { lang } = useAppState();
+  const lang = useLang();
   const t = useTranslation(lang);
 
   return (

@@ -61,7 +61,7 @@ export default function Navigation({
               className="rounded-full p-2 bg-accent hover:bg-accent/80 transition-colors flex items-center w-[60px] justify-center"
             >
               <Globe size={20} className="mr-1 flex-shrink-0" />
-              <span className="text-sm font-medium">{lang.toUpperCase()}</span>
+              <span className="text-sm font-medium">{otherLang.toUpperCase()}</span>
             </Link>
 
             <button
