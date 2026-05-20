@@ -3,30 +3,33 @@ const path = require('path');
 
 const BASE_URL = 'https://cvenom.com';
 
+// Canonical URLs match what pages actually serve (/en and /fr, not bare /)
 const staticRoutes = [
-  { path: '', priority: 1.0, changefreq: 'daily' },
-  { path: '/blog', priority: 0.8, changefreq: 'weekly' },
-  { path: '/contact', priority: 0.7, changefreq: 'monthly' },
-  { path: '/privacy', priority: 0.5, changefreq: 'yearly' },
-  { path: '/terms', priority: 0.5, changefreq: 'yearly' },
+  { path: '/en', priority: 1.0, changefreq: 'daily' },
+  { path: '/fr', priority: 1.0, changefreq: 'daily' },
+  { path: '/en/blog', priority: 0.8, changefreq: 'weekly' },
+  { path: '/en/contact', priority: 0.7, changefreq: 'monthly' },
+  { path: '/en/privacy', priority: 0.5, changefreq: 'yearly' },
+  { path: '/en/terms', priority: 0.5, changefreq: 'yearly' },
 ];
 
 const urls = [
   {
-    url: 'https://cvenom.com',
+    url: 'https://cvenom.com/en',
     alternates: [
-      { href: 'https://cvenom.com', hreflang: 'en' },
+      { href: 'https://cvenom.com/en', hreflang: 'en' },
       { href: 'https://cvenom.com/fr', hreflang: 'fr' },
-      { href: 'https://cvenom.com', hreflang: 'x-default' }
+      { href: 'https://cvenom.com/en', hreflang: 'x-default' },
     ]
   },
   {
     url: 'https://cvenom.com/fr',
     alternates: [
-      { href: 'https://cvenom.com', hreflang: 'en' },
+      { href: 'https://cvenom.com/en', hreflang: 'en' },
       { href: 'https://cvenom.com/fr', hreflang: 'fr' },
+      { href: 'https://cvenom.com/en', hreflang: 'x-default' },
     ]
-  }
+  },
 ]
 
 function generateSitemap() {

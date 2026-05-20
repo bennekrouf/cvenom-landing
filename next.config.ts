@@ -42,6 +42,19 @@ const nextConfig = {
 
   poweredByHeader: false,
   compress: true,
+
+  // 308 Permanent Redirect: Google passes full PageRank to /en.
+  // The dynamic page.tsx redirect fires as a fallback, but config-level
+  // redirects run first and are cached by CDN/Googlebot.
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/en',
+        permanent: true,   // 308
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
