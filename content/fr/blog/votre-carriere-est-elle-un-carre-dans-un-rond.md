@@ -5,7 +5,7 @@ date: "2026-05-20"
 author: "Cvenom Team"
 tags: ["carrière", "développement-professionnel"]
 lang: "fr"
-status: "draft"
+status: "published"
 ---
 
 # Votre carrière est-elle un carré dans un rond ?
