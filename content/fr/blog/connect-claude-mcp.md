@@ -32,8 +32,10 @@ Sur [Claude.ai](https://claude.ai), cliquez sur **Customize** (en haut à droite
 
 | Champ | Valeur |
 |---|---|
-| MCP Server URL | `https://cvenom.com/mcp` |
+| MCP Server URL | `https://gateway.api0.ai/mcp?client=cvenom-mcp` |
 | OAuth Client ID | `cvenom-mcp` |
+
+L'OAuth Client ID se saisit dans **Advanced settings** ; laissez le client secret vide.
 
 ### 3. S'authentifier avec Google
 
