@@ -134,11 +134,15 @@
   },
   "terms": {
     "title": "Terms of Service",
-    "lastUpdated": "Last updated: November 6, 2025",
+    "lastUpdated": "Last updated: October 7, 2026",
     "sections": {
       "acceptance": {
         "title": "Acceptance of Terms",
         "content": "By accessing and using Cvenom, operated by Mayorana (a Swiss company), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our platform."
+      },
+      "eligibility": {
+        "title": "Eligibility",
+        "content": "You must be at least 16 years old to create an account or use Cvenom. By using the platform, you confirm that you meet this requirement. We do not knowingly collect personal data from anyone under 16; if we learn that such an account exists, we will delete it and its data."
       },
       "services": {
         "title": "Description of Services",
@@ -154,6 +158,10 @@
           "Maintain the confidentiality of your account credentials",
           "Comply with all applicable laws and regulations when using our services"
         ]
+      },
+      "payments": {
+        "title": "Credits and Payments",
+        "content": "Cvenom is paid for with prepaid credits bought in one-off payments. There is no subscription and nothing renews automatically. Credits are digital content delivered to your account immediately after payment. If you are a consumer in the European Union, you normally have a 14-day right of withdrawal; by ticking the box at checkout, you expressly ask for immediate delivery and acknowledge that you lose this right once the credits are delivered. This does not affect your rights if a payment was taken in error or the service does not work as described: contact us at legal@cvenom.com."
       },
       "intellectualProperty": {
         "title": "Intellectual Property",

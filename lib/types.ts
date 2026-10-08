@@ -112,6 +112,10 @@ export interface Translations {
         title: string;
         content: string;
       };
+      eligibility: {
+        title: string;
+        content: string;
+      };
       services: {
         title: string;
         content: string;
@@ -120,6 +124,10 @@ export interface Translations {
         title: string;
         intro: string;
         items: string[];
+      };
+      payments: {
+        title: string;
+        content: string;
       };
       intellectualProperty: {
         title: string;
