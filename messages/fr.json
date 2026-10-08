@@ -134,11 +134,15 @@
   },
   "terms": {
     "title": "Conditions d'Utilisation",
-    "lastUpdated": "Dernière mise à jour : 6 novembre 2025",
+    "lastUpdated": "Dernière mise à jour : 7 octobre 2026",
     "sections": {
       "acceptance": {
         "title": "Acceptation des Conditions",
         "content": "En accédant et en utilisant Cvenom, exploité par Mayorana (une entreprise suisse), vous acceptez d'être lié par ces Conditions d'Utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre plateforme."
+      },
+      "eligibility": {
+        "title": "Conditions d'Âge",
+        "content": "Vous devez avoir au moins 16 ans pour créer un compte ou utiliser Cvenom. En utilisant la plateforme, vous confirmez remplir cette condition. Nous ne collectons pas sciemment de données personnelles de personnes de moins de 16 ans ; si nous apprenons qu'un tel compte existe, nous le supprimerons avec ses données."
       },
       "services": {
         "title": "Description des Services",
@@ -154,6 +158,10 @@
           "Maintenir la confidentialité de vos identifiants de compte",
           "Respecter toutes les lois et réglementations applicables lors de l'utilisation de nos services"
         ]
+      },
+      "payments": {
+        "title": "Crédits et Paiements",
+        "content": "Cvenom fonctionne avec des crédits prépayés achetés par paiements ponctuels. Il n'y a aucun abonnement et rien n'est renouvelé automatiquement. Les crédits sont un contenu numérique livré sur votre compte immédiatement après le paiement. Si vous êtes un consommateur dans l'Union européenne, vous disposez normalement d'un droit de rétractation de 14 jours ; en cochant la case lors du paiement, vous demandez expressément la livraison immédiate et reconnaissez perdre ce droit dès la livraison des crédits. Cela n'affecte pas vos droits en cas de paiement prélevé par erreur ou si le service ne fonctionne pas comme décrit : contactez-nous à legal@cvenom.com."
       },
       "intellectualProperty": {
         "title": "Propriété Intellectuelle",

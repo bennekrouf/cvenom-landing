@@ -35,6 +35,11 @@ export default function Terms({ params }: { params: Promise<{ lang: 'en' | 'fr' 
           </section>
 
           <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">{t.terms.sections.eligibility.title}</h2>
+            <p className="mb-4">{t.terms.sections.eligibility.content}</p>
+          </section>
+
+          <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">{t.terms.sections.services.title}</h2>
             <p className="mb-4">{t.terms.sections.services.content}</p>
           </section>
@@ -47,6 +52,11 @@ export default function Terms({ params }: { params: Promise<{ lang: 'en' | 'fr' 
                 <li key={index} className="mb-2">{item}</li>
               ))}
             </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">{t.terms.sections.payments.title}</h2>
+            <p className="mb-4">{t.terms.sections.payments.content}</p>
           </section>
 
           <section className="mb-8">
