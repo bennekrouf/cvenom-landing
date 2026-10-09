@@ -20,7 +20,11 @@ Once connected, you can chat with Claude to manage your CVs without ever opening
 - **Read your CV data** — ask Claude to summarize or review your experience
 - **Generate a PDF** — produce a polished PDF in any template and language
 - **Check your balance** — view your credit balance and transaction history
-- **Translate your profile** — ask Claude to create a French (or any language) version of your CV
+- **Translate your profile** — create the French or German version of your CV (English, French and German are supported)
+- **Tailor your CV to a job** — paste a job posting link and get a fit analysis, an optimized CV, or a ready-to-send PDF
+- **Write a cover letter** — from your profile and the job posting
+- **Generate a portfolio** — a project portfolio PDF from your profile
+- **Import an existing CV** — paste your CV as text and Claude turns it into a cvenom profile
 
 ## How to connect (2 minutes)
 
@@ -32,10 +36,14 @@ In [Claude.ai](https://claude.ai), click **Customize** (top-right) → **Connect
 
 | Field | Value |
 |---|---|
-| MCP Server URL | `https://gateway.api0.ai/mcp?client=cvenom-mcp` |
+| MCP Server URL | `https://gateway.api0.ai/mcp/cvenom-mcp` |
 | OAuth Client ID | `cvenom-mcp` |
 
 The OAuth Client ID goes under **Advanced settings**; leave the client secret empty.
+
+> Don't skip the Client ID: without it, Claude signs you in to a generic workspace instead of cvenom, and your profiles won't show up.
+
+Already connected with the older URL `https://gateway.api0.ai/mcp?client=cvenom-mcp`? It keeps working — no need to change anything.
 
 ### 3. Authenticate with Google
 
@@ -51,9 +59,19 @@ Once connected, try asking Claude:
 
 > *"Generate my profile john-doe as a PDF using the executive template in French"*
 
-> *"My profile only has an English version — can you translate the experiences to French so I can generate a French CV?"*
+> *"My profile only has an English version — can you translate it to French so I can generate a French CV?"*
+
+> *"How well does my profile john-doe fit this job? https://www.linkedin.com/jobs/view/…"*
+
+> *"Tailor my CV to this posting and give me the PDF"*
+
+> *"Write a cover letter in French for this job, based on my profile"*
+
+> *"Here is my CV as text — create a cvenom profile from it"*
 
 > *"What is my current cvenom credit balance?"*
+
+Generating, optimizing and translating use cvenom credits, exactly as in the studio.
 
 ## On mobile too
 

@@ -32,6 +32,53 @@
       }
     ]
   },
+  "comparison": {
+    "title": "How cVenom compares",
+    "subtitle": "Only the things cVenom is strong at are listed. The others do plenty it doesn't — this is why you would pick it.",
+    "feature": "Feature",
+    "yes": "Yes",
+    "no": "No",
+    "note": "Compared in October 2026 from each product's public pricing and documentation.",
+    "competitors": [
+      "Teal",
+      "Kickresume",
+      "Rezi"
+    ],
+    "rows": [
+      {
+        "feature": "Pay per document, no subscription — 100 credits free to start",
+        "them": [
+          "$29/month for unlimited AI",
+          "From €10/month",
+          "Pro subscription"
+        ]
+      },
+      {
+        "feature": "The whole job search from Claude: tailor, generate the PDF, write the cover letter",
+        "them": [
+          false,
+          false,
+          "Reads and edits resumes; Pro only"
+        ]
+      },
+      {
+        "feature": "A portfolio PDF built from the projects in your CV",
+        "them": [
+          false,
+          "A personal website instead",
+          false
+        ]
+      },
+      {
+        "feature": "Your CV translated into English, French or German",
+        "them": [
+          false,
+          "Yearly plan only",
+          false
+        ]
+      }
+    ]
+  },
   "stats": {
     "title": "Trusted by Job Seekers Worldwide",
     "users": "Active Users",

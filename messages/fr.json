@@ -32,6 +32,53 @@
       }
     ]
   },
+  "comparison": {
+    "title": "cVenom face aux alternatives",
+    "subtitle": "Seuls les points forts de cVenom sont listés. Les autres font beaucoup de choses qu'il ne fait pas — ce tableau dit pourquoi le choisir.",
+    "feature": "Fonctionnalité",
+    "yes": "Oui",
+    "no": "Non",
+    "note": "Comparaison faite en octobre 2026 à partir des tarifs et de la documentation publics de chaque produit.",
+    "competitors": [
+      "Teal",
+      "Kickresume",
+      "Rezi"
+    ],
+    "rows": [
+      {
+        "feature": "Paiement au document, sans abonnement — 100 crédits offerts pour commencer",
+        "them": [
+          "29 $/mois pour l'IA illimitée",
+          "Dès 10 €/mois",
+          "Abonnement Pro"
+        ]
+      },
+      {
+        "feature": "Toute la recherche d'emploi depuis Claude : adapter, générer le PDF, écrire la lettre",
+        "them": [
+          false,
+          false,
+          "Lit et modifie les CV ; Pro uniquement"
+        ]
+      },
+      {
+        "feature": "Un portfolio PDF construit à partir des projets de votre CV",
+        "them": [
+          false,
+          "Un site personnel à la place",
+          false
+        ]
+      },
+      {
+        "feature": "Votre CV traduit en anglais, français ou allemand",
+        "them": [
+          false,
+          "Formule annuelle uniquement",
+          false
+        ]
+      }
+    ]
+  },
   "stats": {
     "title": "Approuvé par des Chercheurs d'Emploi Mondiaux",
     "users": "Utilisateurs Actifs",
