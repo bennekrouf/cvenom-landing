@@ -31,6 +31,18 @@ export interface Translations {
       desc: string;
     }>;
   };
+  comparison: {
+    title: string;
+    subtitle: string;
+    feature: string;
+    yes: string;
+    no: string;
+    note: string;
+    competitors: string[];
+    // A competitor cell: true (does it too), false (doesn't), or a short note
+    // on what it does instead.
+    rows: Array<{ feature: string; them: Array<boolean | string> }>;
+  };
   stats: {
     title: string;
     users: string;
