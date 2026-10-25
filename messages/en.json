@@ -2,7 +2,8 @@
   "nav": {
     "features": "Features",
     "blog": "Blog",
-    "tryDemo": "Launch Studio"
+    "tryDemo": "Launch Studio",
+    "pricing": "Pricing"
   },
   "hero": {
     "title": "Land your next job with the right CV",
@@ -46,7 +47,7 @@
     ],
     "rows": [
       {
-        "feature": "Pay per document, no subscription — 100 credits free to start",
+        "feature": "Free to start, then a monthly plan or one-off top-ups — 100 credits free",
         "them": [
           "$29/month for unlimited AI",
           "From €10/month",
@@ -79,6 +80,45 @@
       }
     ]
   },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Start free. Then subscribe for monthly credits, or top up once when you need more.",
+    "free": {
+      "title": "Free",
+      "price": "100 credits",
+      "items": [
+        "Given when you sign up",
+        "≈ 5 tailored CVs or cover letters",
+        "No card needed"
+      ],
+      "cta": "Launch Studio free"
+    },
+    "plans": {
+      "badge": "Best value",
+      "title": "mayorana plans",
+      "perPlan": "{credits} credits · ≈ {cvs} CVs",
+      "perMonth": " / month",
+      "priceFallback": "Monthly",
+      "items": [
+        "Fresh credits every month, spent before your own",
+        "Also unlocks mayorana’s other apps, like JobScout to find the jobs",
+        "Cancel anytime"
+      ],
+      "cta": "Choose a plan on mayorana.ch",
+      "note": "Subscribe with the same Google account you use in CVenom: the credits then count here automatically."
+    },
+    "topUp": {
+      "title": "Top-up",
+      "price": "5 = 20 credits",
+      "items": [
+        "In CHF, EUR, USD, GBP and more",
+        "Pay once, nothing renews",
+        "Credits never expire"
+      ],
+      "cta": "Top up in the studio"
+    },
+    "costs": "A CV or cover letter costs 20 credits; an optimization or translation 5."
+  },
   "stats": {
     "title": "Trusted by Job Seekers Worldwide",
     "users": "Active Users",
@@ -103,9 +143,18 @@
     ],
     "cta": "Get my referral code →",
     "stats": [
-      { "value": "30%", "label": "Commission rate" },
-      { "value": "~$5", "label": "Avg purchase / customer" },
-      { "value": "~$1.50", "label": "Your cut per customer" }
+      {
+        "value": "30%",
+        "label": "Commission rate"
+      },
+      {
+        "value": "~$5",
+        "label": "Avg purchase / customer"
+      },
+      {
+        "value": "~$1.50",
+        "label": "Your cut per customer"
+      }
     ]
   },
   "footer": {
@@ -181,7 +230,7 @@
   },
   "terms": {
     "title": "Terms of Service",
-    "lastUpdated": "Last updated: October 7, 2026",
+    "lastUpdated": "Last updated: October 25, 2026",
     "sections": {
       "acceptance": {
         "title": "Acceptance of Terms",
@@ -208,7 +257,7 @@
       },
       "payments": {
         "title": "Credits and Payments",
-        "content": "Cvenom is paid for with prepaid credits bought in one-off payments. There is no subscription and nothing renews automatically. Credits are digital content delivered to your account immediately after payment. If you are a consumer in the European Union, you normally have a 14-day right of withdrawal; by ticking the box at checkout, you expressly ask for immediate delivery and acknowledge that you lose this right once the credits are delivered. This does not affect your rights if a payment was taken in error or the service does not work as described: contact us at legal@cvenom.com."
+        "content": "Cvenom runs on credits, which you can get in two ways. (1) One-off top-ups bought on Cvenom: a single payment, nothing renews, and the credits never expire. (2) A monthly plan sold by Mayorana on mayorana.ch, which renews every month until you cancel it there; its credits are added each month, are spent before your own, lapse at the end of each month, and count in Cvenom when you sign in to both with the same email. Plans are governed by Mayorana's terms on mayorana.ch, where you can cancel at any time. Credits are digital content delivered to your account immediately after payment. If you are a consumer in the European Union, you normally have a 14-day right of withdrawal; by ticking the box at checkout, you expressly ask for immediate delivery and acknowledge that you lose this right once the credits are delivered. This does not affect your rights if a payment was taken in error or the service does not work as described: contact us at legal@cvenom.com."
       },
       "intellectualProperty": {
         "title": "Intellectual Property",

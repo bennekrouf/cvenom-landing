@@ -14,6 +14,7 @@ export interface BlogPost {
 export interface Translations {
   nav: {
     features: string;
+    pricing: string;
     blog: string;
     tryDemo: string;
   };
@@ -42,6 +43,25 @@ export interface Translations {
     // A competitor cell: true (does it too), false (doesn't), or a short note
     // on what it does instead.
     rows: Array<{ feature: string; them: Array<boolean | string> }>;
+  };
+  // The free start, mayorana's monthly plans (prices read live) and top-ups.
+  pricing: {
+    title: string;
+    subtitle: string;
+    free: { title: string; price: string; items: string[]; cta: string };
+    plans: {
+      badge: string;
+      title: string;
+      /** {credits} and {cvs} for one plan's line. */
+      perPlan: string;
+      perMonth: string;
+      priceFallback: string;
+      items: string[];
+      cta: string;
+      note: string;
+    };
+    topUp: { title: string; price: string; items: string[]; cta: string };
+    costs: string;
   };
   stats: {
     title: string;

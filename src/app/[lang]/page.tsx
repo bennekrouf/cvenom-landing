@@ -5,6 +5,7 @@ import { FloatingWhatsApp } from '@/components/WhatsApp';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Comparison from '@/components/Comparison';
+import Pricing from '@/components/Pricing';
 import Earn from '@/components/Earn';
 import Stats from '@/components/Stats';
 import CTA from '@/components/CTA';
@@ -33,6 +34,7 @@ export default function Home({ params }: { params: Promise<{ lang: 'en' | 'fr' }
       <Hero />
       <Features />
       <Comparison />
+      <Pricing />
       <Earn />
       <Stats />
       <CTA />
