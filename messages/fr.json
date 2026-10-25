@@ -2,7 +2,8 @@
   "nav": {
     "features": "Fonctionnalités",
     "blog": "Blog",
-    "tryDemo": "Essayer"
+    "tryDemo": "Essayer",
+    "pricing": "Tarifs"
   },
   "hero": {
     "title": "Décrochez votre prochain emploi avec le bon CV",
@@ -46,7 +47,7 @@
     ],
     "rows": [
       {
-        "feature": "Paiement au document, sans abonnement — 100 crédits offerts pour commencer",
+        "feature": "Gratuit pour commencer, puis une formule mensuelle ou des recharges ponctuelles — 100 crédits offerts",
         "them": [
           "29 $/mois pour l'IA illimitée",
           "Dès 10 €/mois",
@@ -79,6 +80,45 @@
       }
     ]
   },
+  "pricing": {
+    "title": "Tarifs",
+    "subtitle": "Commencez gratuitement. Ensuite, abonnez-vous pour des crédits chaque mois, ou rechargez une fois quand il vous en faut plus.",
+    "free": {
+      "title": "Gratuit",
+      "price": "100 crédits",
+      "items": [
+        "Offerts à l’inscription",
+        "≈ 5 CV ou lettres de motivation sur mesure",
+        "Sans carte bancaire"
+      ],
+      "cta": "Lancer le studio gratuitement"
+    },
+    "plans": {
+      "badge": "Meilleur prix",
+      "title": "Formules mayorana",
+      "perPlan": "{credits} crédits · ≈ {cvs} CV",
+      "perMonth": " / mois",
+      "priceFallback": "Mensuel",
+      "items": [
+        "Des crédits neufs chaque mois, utilisés avant les vôtres",
+        "Débloque aussi les autres apps mayorana, comme JobScout pour trouver les offres",
+        "Résiliable à tout moment"
+      ],
+      "cta": "Choisir une formule sur mayorana.ch",
+      "note": "Abonnez-vous avec le même compte Google que dans CVenom : les crédits y comptent alors automatiquement."
+    },
+    "topUp": {
+      "title": "Recharge",
+      "price": "5 = 20 crédits",
+      "items": [
+        "En CHF, EUR, USD, GBP et plus",
+        "Un seul paiement, rien ne se renouvelle",
+        "Les crédits n’expirent jamais"
+      ],
+      "cta": "Recharger dans le studio"
+    },
+    "costs": "Un CV ou une lettre de motivation coûte 20 crédits ; une optimisation ou une traduction 5."
+  },
   "stats": {
     "title": "Approuvé par des Chercheurs d'Emploi Mondiaux",
     "users": "Utilisateurs Actifs",
@@ -103,9 +143,18 @@
     ],
     "cta": "Obtenir mon code de parrainage →",
     "stats": [
-      { "value": "30%", "label": "Taux de commission" },
-      { "value": "~5€", "label": "Achat moyen / client" },
-      { "value": "~1,50€", "label": "Votre part par client" }
+      {
+        "value": "30%",
+        "label": "Taux de commission"
+      },
+      {
+        "value": "~5€",
+        "label": "Achat moyen / client"
+      },
+      {
+        "value": "~1,50€",
+        "label": "Votre part par client"
+      }
     ]
   },
   "footer": {
@@ -181,7 +230,7 @@
   },
   "terms": {
     "title": "Conditions d'Utilisation",
-    "lastUpdated": "Dernière mise à jour : 7 octobre 2026",
+    "lastUpdated": "Dernière mise à jour : 25 octobre 2026",
     "sections": {
       "acceptance": {
         "title": "Acceptation des Conditions",
@@ -208,7 +257,7 @@
       },
       "payments": {
         "title": "Crédits et Paiements",
-        "content": "Cvenom fonctionne avec des crédits prépayés achetés par paiements ponctuels. Il n'y a aucun abonnement et rien n'est renouvelé automatiquement. Les crédits sont un contenu numérique livré sur votre compte immédiatement après le paiement. Si vous êtes un consommateur dans l'Union européenne, vous disposez normalement d'un droit de rétractation de 14 jours ; en cochant la case lors du paiement, vous demandez expressément la livraison immédiate et reconnaissez perdre ce droit dès la livraison des crédits. Cela n'affecte pas vos droits en cas de paiement prélevé par erreur ou si le service ne fonctionne pas comme décrit : contactez-nous à legal@cvenom.com."
+        "content": "Cvenom fonctionne avec des crédits, que vous pouvez obtenir de deux façons. (1) Des recharges ponctuelles achetées sur Cvenom : un seul paiement, rien n'est renouvelé, et les crédits n'expirent jamais. (2) Une formule mensuelle vendue par Mayorana sur mayorana.ch, renouvelée chaque mois jusqu'à ce que vous la résiliiez sur ce site ; ses crédits sont ajoutés chaque mois, utilisés avant les vôtres, expirent à la fin de chaque mois, et comptent dans Cvenom lorsque vous vous connectez aux deux avec le même e-mail. Les formules sont régies par les conditions de Mayorana sur mayorana.ch, où vous pouvez résilier à tout moment. Les crédits sont un contenu numérique livré sur votre compte immédiatement après le paiement. Si vous êtes un consommateur dans l'Union européenne, vous disposez normalement d'un droit de rétractation de 14 jours ; en cochant la case lors du paiement, vous demandez expressément la livraison immédiate et reconnaissez perdre ce droit dès la livraison des crédits. Cela n'affecte pas vos droits en cas de paiement prélevé par erreur ou si le service ne fonctionne pas comme décrit : contactez-nous à legal@cvenom.com."
       },
       "intellectualProperty": {
         "title": "Propriété Intellectuelle",

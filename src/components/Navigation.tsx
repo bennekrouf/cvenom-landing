@@ -46,6 +46,9 @@ export default function Navigation({
           <Link href={`/${lang}/#features`} className="text-sm font-medium text-foreground hover:text-primary transition-colors whitespace-nowrap">
             {t.nav.features}
           </Link>
+          <Link href={`/${lang}/#pricing`} className="text-sm font-medium text-foreground hover:text-primary transition-colors whitespace-nowrap">
+            {t.nav.pricing}
+          </Link>
           <Link href={`/${lang}/blog`} className="text-sm font-medium text-foreground hover:text-primary transition-colors whitespace-nowrap">
             {t.nav.blog}
           </Link>
@@ -89,6 +92,7 @@ export default function Navigation({
         <div className="md:hidden border-t border-border">
           <div className="container mx-auto px-4 py-4 space-y-3">
             <Link href={`/${lang}/#features`} className="block py-2 text-foreground" onClick={() => setMobileMenuOpen(false)}>{t.nav.features}</Link>
+            <Link href={`/${lang}/#pricing`} className="block py-2 text-foreground" onClick={() => setMobileMenuOpen(false)}>{t.nav.pricing}</Link>
             <Link href={`/${lang}/blog`} className="block py-2 text-foreground" onClick={() => setMobileMenuOpen(false)}>{t.nav.blog}</Link>
 
             <div className="pt-2 border-t border-border">
