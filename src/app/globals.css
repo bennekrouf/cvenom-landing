@@ -155,3 +155,6 @@ input, textarea, select, button, [contenteditable="true"], [contenteditable=""],
 .blog-content th { @apply bg-muted font-semibold whitespace-nowrap; }
 .blog-content code { @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono break-all; }
 .blog-content hr { @apply border-border my-8; }
+.blog-content figure { @apply my-6; }
+.blog-content figure img { @apply w-full h-auto rounded-lg border border-border; }
+.blog-content figcaption { @apply mt-2 text-sm text-center text-muted-foreground; }

@@ -21,6 +21,15 @@ function mdToHtml(md) {
     // Horizontal rule
     if (/^---+$/.test(line.trim())) { out.push('<hr>'); i++; continue; }
 
+    // Image on its own line: ![caption](src)
+    const img = line.match(/^!\[(.*?)\]\((.+?)\)\s*$/);
+    if (img) {
+      const alt = img[1].replace(/"/g, '&quot;');
+      out.push(`<figure><img src="${img[2]}" alt="${alt}" loading="lazy">${img[1] ? `<figcaption>${inline(img[1])}</figcaption>` : ''}</figure>`);
+      i++;
+      continue;
+    }
+
     // Blockquote
     if (/^> /.test(line)) {
       const qlines = [];
