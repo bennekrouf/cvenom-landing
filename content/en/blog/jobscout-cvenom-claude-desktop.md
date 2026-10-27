@@ -113,7 +113,7 @@ The details are in [Use Claude AI to manage your CVs](/en/blog/connect-claude-mc
 
 ![The cvenom connector in Claude Desktop's Connectors settings](/image/blog/jobscout-claude-desktop/06-claude-desktop-connectors.png)
 
-In a new chat, open the tools menu under the message box: both **jobscout** and **cvenom** should be listed and switched on.
+In a new chat, click **+** in the message box, then **Connectors**: both **jobscout** and **cvenom** should be listed and switched on.
 
 ## Step 5: Give JobScout your profile
 
@@ -133,7 +133,7 @@ JobScout searches LinkedIn, jobs.ch and jobup.ch, keeps the new posts and gives 
 
 ![Claude listing the best matches with their scores](/image/blog/jobscout-claude-desktop/07-claude-search-score.png)
 
-The first time Claude uses a tool, Claude Desktop asks for your permission. Choose **Allow always** for the read-only ones (listing and reading jobs, reading your CV) and keep the confirmation for the rest if you prefer.
+The first time Claude uses a tool, Claude Desktop asks for your permission. Choose **Always allow** for the read-only ones (listing and reading jobs, reading your CV) and keep the confirmation for the rest if you prefer.
 
 ![Claude Desktop asking to allow a JobScout tool](/image/blog/jobscout-claude-desktop/08-claude-tool-permission.png)
 
@@ -173,7 +173,7 @@ Score the jobs you're interested in rather than everything, and ask Claude for t
 ## Troubleshooting
 
 - **Claude doesn't see JobScout**: check the path in `claude_desktop_config.json` against the one in JobScout's MCP window, then quit Claude Desktop completely (not just the window) and open it again
-- **Claude writes a CV itself instead of using cvenom**: the cvenom connector isn't on in this chat. Switch it on in the tools menu under the message box
+- **Claude writes a CV itself instead of using cvenom**: the cvenom connector isn't on in this chat. Switch it on under **+ → Connectors** in the message box
 - **cvenom says you don't have enough credits**: sign in on mayorana.ch with the same email as your cvenom account, so the plan's credits count there
 - **cvenom lists no profiles**: you signed in to the connector with another Google account, or without the `cvenom-mcp` Client ID. Remove the connector and add it again
 

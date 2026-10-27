@@ -113,7 +113,7 @@ Tous les détails sont dans [Utilisez Claude AI pour gérer vos CVs](/fr/blog/co
 
 ![Le connecteur cvenom dans les réglages Connectors de Claude Desktop](/image/blog/jobscout-claude-desktop/06-claude-desktop-connectors.png)
 
-Dans une nouvelle conversation, ouvrez le menu des outils sous la zone de message : **jobscout** et **cvenom** doivent y figurer, activés.
+Dans une nouvelle conversation, cliquez sur **+** dans la zone de message, puis **Connectors** : **jobscout** et **cvenom** doivent y figurer, activés.
 
 ## Étape 5 : donner votre profil à JobScout
 
@@ -133,7 +133,7 @@ JobScout cherche sur LinkedIn, jobs.ch et jobup.ch, garde les nouvelles offres e
 
 ![Claude liste les meilleures correspondances avec leur note](/image/blog/jobscout-claude-desktop/07-claude-search-score.png)
 
-La première fois que Claude utilise un outil, Claude Desktop vous demande l'autorisation. Choisissez **Allow always** pour les outils en lecture seule (lister et lire les offres, lire votre CV), et gardez la confirmation pour les autres si vous préférez.
+La première fois que Claude utilise un outil, Claude Desktop vous demande l'autorisation. Choisissez **Always allow** pour les outils en lecture seule (lister et lire les offres, lire votre CV), et gardez la confirmation pour les autres si vous préférez.
 
 ![Claude Desktop demande l'autorisation d'utiliser un outil JobScout](/image/blog/jobscout-claude-desktop/08-claude-tool-permission.png)
 
@@ -173,7 +173,7 @@ Notez les offres qui vous intéressent plutôt que toutes, et demandez votre sol
 ## En cas de problème
 
 - **Claude ne voit pas JobScout** : comparez le chemin dans `claude_desktop_config.json` avec celui de la fenêtre MCP de JobScout, puis quittez complètement Claude Desktop (pas seulement la fenêtre) et rouvrez-le
-- **Claude écrit un CV lui-même au lieu d'utiliser cvenom** : le connecteur cvenom n'est pas activé dans cette conversation. Activez-le dans le menu des outils sous la zone de message
+- **Claude écrit un CV lui-même au lieu d'utiliser cvenom** : le connecteur cvenom n'est pas activé dans cette conversation. Activez-le via **+ → Connectors** dans la zone de message
 - **cvenom indique que vos crédits sont insuffisants** : connectez-vous sur mayorana.ch avec la même adresse e-mail que votre compte cvenom, pour que les crédits de l'abonnement y comptent
 - **cvenom ne liste aucun profil** : vous vous êtes connecté au connecteur avec un autre compte Google, ou sans le Client ID `cvenom-mcp`. Supprimez le connecteur et ajoutez-le à nouveau
 
