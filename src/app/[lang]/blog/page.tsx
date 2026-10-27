@@ -12,7 +12,7 @@ export default function Blog({ params }: { params: Promise<{ lang: 'en' | 'fr' }
   const { lang } = use(params);
   const [posts, setPosts] = useState<BlogPost[]>([]);
 
-  const { theme, mobileMenuOpen, mounted, setMobileMenuOpen, toggleTheme } = useAppState();
+  const { theme, mobileMenuOpen, setMobileMenuOpen, toggleTheme } = useAppState();
   const t = useTranslation(lang);
 
   useEffect(() => {
@@ -22,7 +22,6 @@ export default function Blog({ params }: { params: Promise<{ lang: 'en' | 'fr' }
       .catch(err => console.error('Failed to load blog posts:', err));
   }, [lang]);
 
-  if (!mounted) return null;
 
   return (
     <div className="min-h-screen">
