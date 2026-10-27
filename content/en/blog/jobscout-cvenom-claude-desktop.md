@@ -1,6 +1,6 @@
 ---
 title: "From job search to tailored CV in one Claude Desktop chat"
-description: "Connect JobScout and cvenom to Claude Desktop: Claude finds the jobs that match your profile, then hands the best one to cvenom, which returns a CV tailored to it as a PDF."
+description: "JobScout finds the jobs. cvenom tailors your CV to the one you pick. All in Claude Desktop."
 date: "2026-10-27"
 author: "Cvenom Team"
 tags: ["tutorial", "claude", "mcp", "jobscout", "job search"]
@@ -10,169 +10,107 @@ status: "published"
 
 # From job search to tailored CV in one Claude Desktop chat
 
-Searching for jobs and adapting your CV to each one usually means two tabs, a lot of copy-paste and a CV you rewrite by hand every time. With **JobScout** and **cvenom** both connected to **Claude Desktop**, it becomes one conversation:
+Connect **JobScout** and **cvenom** to **Claude Desktop**. Then ask:
 
-> *"Find data engineer jobs in Zurich posted this week, score them against my profile, and make me a CV for the best one."*
+> *"Find data engineer jobs in Zurich posted this week and make me a CV for the best one."*
 
-Claude asks **JobScout** to search LinkedIn and the national job boards and to score each post against your profile. It then passes the job you pick to **cvenom**, which tailors **your real CV** to it and returns a PDF ready to send. Claude never writes the CV itself: the content always comes from your cvenom profile.
+JobScout finds and scores the jobs. cvenom tailors your CV and returns a PDF. Claude never writes the CV itself.
 
-This guide is for **Claude Desktop** (macOS and Windows). A guide for Codex is coming once we've checked the same flow there.
+This guide is for Claude Desktop on macOS and Windows. A Codex guide is coming.
 
 ## What you need
 
-- **Claude Desktop**, from [claude.ai/download](https://claude.ai/download)
-- **A cvenom account** with at least one CV profile ([create one in the studio](https://studio.cvenom.com))
-- **JobScout**, the free desktop app that finds and scores the jobs (step 1)
-- **A mayorana.ch plan**, for the monthly AI credits that JobScout and cvenom both use (step 2)
+- [Claude Desktop](https://claude.ai/download)
+- A cvenom account with a CV profile ([studio](https://studio.cvenom.com))
+- JobScout (step 1)
+- A mayorana.ch plan, for AI credits (step 2)
 
 ## Step 1: Install JobScout
 
-JobScout is a desktop app that collects job posts for one country at a time (Switzerland, Germany, France, the UK, Singapore and more) and ranks them against your profile. It runs on your computer and reads LinkedIn without logging in, so your account is never at risk.
+Download JobScout from [mayorana.ch](https://mayorana.ch/en/apps/jobscout):
 
-Download it from [JobScout's page on mayorana.ch](https://mayorana.ch/en/apps/jobscout):
+- **macOS**: [jobscout-macos.dmg](https://mayorana.ch/downloads/jobscout/latest/jobscout-macos.dmg)
+- **Windows**: [jobscout-setup.exe](https://mayorana.ch/downloads/jobscout/latest/jobscout-setup.exe)
 
-- **macOS** (Apple Silicon and Intel): open [jobscout-macos.dmg](https://mayorana.ch/downloads/jobscout/latest/jobscout-macos.dmg) and drag JobScout to Applications
-- **Windows**: run [jobscout-setup.exe](https://mayorana.ch/downloads/jobscout/latest/jobscout-setup.exe)
-
-Open JobScout once and pick your country with the flags at the top of the sidebar.
+Open it and pick your country.
 
 ![JobScout's download page on mayorana.ch](/image/blog/jobscout-claude-desktop/01-jobscout-download.png)
 
 ## Step 2: Subscribe to a mayorana.ch plan
 
-One mayorana.ch plan covers both apps:
-
-| Plan | Price | AI credits a month | JobScout searches a month | Tailored CVs a month |
-|---|---|---|---|---|
-| Basic | €9 / month | 500 | 50 | up to 25 |
-| Pro | €19 / month | 2,000 | 500 | up to 100 |
-| Max | €49 / month | 4,000 | 1,000 | up to 200 |
-
-The free version of JobScout runs 10 searches a month.
-
-- **JobScout** gets more searches a month
-- **AI credits** every month, spent by JobScout to score jobs **and by cvenom** to tailor CVs, write cover letters and translate profiles. A tailored CV costs 20 credits.
+One plan covers both apps. It adds JobScout searches and AI credits every month. cvenom uses the same credits: a tailored CV costs 20.
 
 Pick a plan on [mayorana.ch/pricing](https://mayorana.ch/pricing?from=cvenom).
 
-> Sign in on mayorana.ch with the **same Google account as your cvenom account**. That's how cvenom finds your plan: its credits are spent first, then your own cvenom balance.
+> Use the same Google account as on cvenom. That's how cvenom finds your plan.
 
 ![The plans on mayorana.ch/pricing](/image/blog/jobscout-claude-desktop/02-mayorana-pricing.png)
 
-After checkout you receive a **licence number** by email. In JobScout, click **✦ PRO** at the top of the window, paste it and click **Activate**. JobScout then shows the AI credits left this month.
+You get a licence number by email. In JobScout, click **✦ PRO**, paste it and click **Activate**.
 
 ![Activating the licence in JobScout's Pro window](/image/blog/jobscout-claude-desktop/03-jobscout-licence.png)
 
-You can check that cvenom sees the plan in the [studio's credits page](https://studio.cvenom.com/credits), or later by asking Claude *"What is my cvenom credit balance?"*.
+## Step 3: Connect JobScout
 
-## Step 3: Connect JobScout to Claude Desktop
-
-JobScout runs on your computer, so Claude Desktop starts it as a local MCP server. JobScout writes the configuration for you:
-
-- In JobScout, click **MCP** in the bar at the top of the window and **Copy** the Claude Desktop snippet
+- In JobScout, click **MCP** and copy the Claude Desktop snippet
 - In Claude Desktop, open **Settings → Developer → Edit Config**
-- Paste the snippet into `claude_desktop_config.json` and save. If the file already has an `mcpServers` section, add only the `jobscout` entry to it
-- **Quit Claude Desktop completely** and open it again
-
-On macOS, the snippet looks like this:
-
-```json
-{
-  "mcpServers": {
-    "jobscout": {
-      "command": "/Applications/JobScout.app/Contents/MacOS/jobscout",
-      "args": ["mcp"]
-    }
-  }
-}
-```
+- Paste it into `claude_desktop_config.json` and save. If the file already has `mcpServers`, add only the `jobscout` entry
+- Quit Claude Desktop completely and open it again
 
 ![JobScout's MCP window, with the snippet to copy](/image/blog/jobscout-claude-desktop/04-jobscout-mcp-button.png)
 
 ![Settings → Developer in Claude Desktop, with jobscout running](/image/blog/jobscout-claude-desktop/05-claude-desktop-developer.png)
 
-> JobScout only works in **Claude Desktop**, not in Claude in the browser: claude.ai can only reach servers on the internet, and JobScout runs on your machine. The JobScout window and Claude share the same jobs, so whatever Claude changes shows up in the window within a couple of seconds.
+JobScout runs on your computer, so it works in Claude Desktop, not on claude.ai.
 
-## Step 4: Connect cvenom to Claude Desktop
+## Step 4: Connect cvenom
 
-cvenom is an online MCP server, added as a connector:
-
-- In Claude Desktop, open **Settings → Connectors**, click **+ Add** and choose **Add custom connector**
-- Enter the server URL and, under **Advanced settings**, the OAuth Client ID:
+In **Settings → Connectors**, add a custom connector:
 
 | Field | Value |
 |---|---|
 | MCP Server URL | `https://gateway.api0.ai/mcp/cvenom-mcp` |
-| OAuth Client ID | `cvenom-mcp` |
+| OAuth Client ID | `cvenom-mcp` (under Advanced settings) |
 
-- Click **Connect** and sign in with the Google account you use on cvenom
-
-The details are in [Use Claude AI to manage your CVs](/en/blog/connect-claude-mcp). Already connected on claude.ai? Then the connector is already there in Claude Desktop.
+Click **Connect** and sign in with your cvenom Google account. Details in [Use Claude AI to manage your CVs](/en/blog/connect-claude-mcp).
 
 ![The cvenom connector in Claude Desktop's Connectors settings](/image/blog/jobscout-claude-desktop/06-claude-desktop-connectors.png)
 
-In a new chat, click **+** in the message box, then **Connectors**: both **jobscout** and **cvenom** should be listed and switched on.
+## Step 5: Set your JobScout profile
 
-## Step 5: Give JobScout your profile
-
-JobScout scores jobs against a profile: who you are, what you're looking for, where. The quickest way to write it is to start from your CV:
+JobScout scores jobs against your profile. Start it from your CV:
 
 > *"Read my cvenom profile and use it to set my JobScout profile for Switzerland. Show me the text before saving."*
 
-Claude reads your CV through cvenom, drafts a profile and shows it to you. Nothing is saved until you agree.
+Nothing is saved until you agree.
 
-## Step 6: Find jobs and get a tailored CV
+## Step 6: Find jobs and get a CV
 
-Now ask for jobs:
+> *"Search for senior backend engineer jobs in Geneva from the last week, then score the new ones."*
 
-> *"Search for senior backend engineer jobs in Geneva posted in the last week, then score the new ones."*
-
-JobScout searches LinkedIn, jobs.ch and jobup.ch, keeps the new posts and gives each one a score with a one-line verdict, strengths and gaps.
-
-The first time Claude uses a tool, Claude Desktop asks for your permission. Choose **Always allow** for the read-only ones (listing and reading jobs, reading your CV) and keep the confirmation for the rest if you prefer.
+The first time, Claude Desktop asks before using each tool. **Always allow** is fine for the read-only ones.
 
 ![Claude Desktop asking to allow a JobScout tool](/image/blog/jobscout-claude-desktop/08-claude-tool-permission.png)
 
-Pick a job and ask for the CV:
+Then pick a job:
 
 > *"Make me a CV for the second one."*
 
-Claude asks JobScout for the job's link and full description, then hands them to cvenom with your profile. cvenom tailors your CV to the post and returns a **download link** to the PDF.
+cvenom tailors your CV and returns a download link.
 
 ![cvenom's tailored CV, with its download link in the chat](/image/blog/jobscout-claude-desktop/09-claude-cv-generated.png)
 
 ![The tailored CV as a PDF](/image/blog/jobscout-claude-desktop/10-cv-pdf.png)
 
-From there, carry on in the same chat:
-
-> *"Write a cover letter in French for this job."*
-
-> *"How well do I really fit this one? List the gaps."*
-
-> *"Mark it as Applied in JobScout."*
-
-> *"Save this search as a watch."*
-
-Watches run on a schedule in the JobScout window, so keep it open for them.
-
-## What it costs
-
-| Action | Uses |
-|---|---|
-| A search (from Claude or the window) | 1 of your JobScout searches this month |
-| Scoring jobs | AI credits from your plan, per job scored |
-| A tailored CV (PDF) | 20 cvenom credits |
-| A cover letter, a fit analysis, a translation | cvenom credits, as in the studio |
-
-Score the jobs you're interested in rather than everything, and ask Claude for the balance any time: *"How many cvenom credits do I have left?"*
+Carry on in the same chat: a cover letter, a fit check, or marking the job as Applied.
 
 ## Troubleshooting
 
-- **Claude doesn't see JobScout**: check the path in `claude_desktop_config.json` against the one in JobScout's MCP window, then quit Claude Desktop completely (not just the window) and open it again
-- **Claude writes a CV itself instead of using cvenom**: the cvenom connector isn't on in this chat. Switch it on under **+ → Connectors** in the message box
-- **cvenom says you don't have enough credits**: sign in on mayorana.ch with the same email as your cvenom account, so the plan's credits count there
-- **cvenom lists no profiles**: you signed in to the connector with another Google account, or without the `cvenom-mcp` Client ID. Remove the connector and add it again
+- **Claude doesn't see JobScout**: check the path in the config, then quit and reopen Claude Desktop
+- **Claude writes the CV itself**: switch on the cvenom connector under **+ → Connectors**
+- **Not enough credits**: sign in on mayorana.ch with your cvenom email
+- **No profiles in cvenom**: reconnect the connector with the right Google account and the `cvenom-mcp` Client ID
 
 ---
 
-Questions? Reach us at [mb@mayorana.ch](mailto:mb@mayorana.ch)
+Questions? [mb@mayorana.ch](mailto:mb@mayorana.ch)
