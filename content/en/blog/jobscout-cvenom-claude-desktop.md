@@ -5,7 +5,7 @@ date: "2026-10-27"
 author: "Cvenom Team"
 tags: ["tutorial", "claude", "mcp", "jobscout", "job search"]
 lang: "en"
-status: "draft"
+status: "published"
 ---
 
 # From job search to tailored CV in one Claude Desktop chat
@@ -17,8 +17,6 @@ Searching for jobs and adapting your CV to each one usually means two tabs, a lo
 Claude asks **JobScout** to search LinkedIn and the national job boards and to score each post against your profile. It then passes the job you pick to **cvenom**, which tailors **your real CV** to it and returns a PDF ready to send. Claude never writes the CV itself: the content always comes from your cvenom profile.
 
 This guide is for **Claude Desktop** (macOS and Windows). A guide for Codex is coming once we've checked the same flow there.
-
-![The whole flow in Claude Desktop: search, score, then a tailored CV as a PDF](/image/blog/jobscout-claude-desktop/00-overview.png)
 
 ## What you need
 
@@ -130,8 +128,6 @@ Now ask for jobs:
 > *"Search for senior backend engineer jobs in Geneva posted in the last week, then score the new ones."*
 
 JobScout searches LinkedIn, jobs.ch and jobup.ch, keeps the new posts and gives each one a score with a one-line verdict, strengths and gaps.
-
-![Claude listing the best matches with their scores](/image/blog/jobscout-claude-desktop/07-claude-search-score.png)
 
 The first time Claude uses a tool, Claude Desktop asks for your permission. Choose **Always allow** for the read-only ones (listing and reading jobs, reading your CV) and keep the confirmation for the rest if you prefer.
 
