@@ -16,10 +16,9 @@ import Footer from '@/components/Footer';
 
 export default function Home({ params }: { params: Promise<{ lang: 'en' | 'fr' }> }) {
   const { lang } = use(params);
-  const { theme, mobileMenuOpen, mounted, setMobileMenuOpen, toggleTheme } = useAppState();
+  const { theme, mobileMenuOpen, setMobileMenuOpen, toggleTheme } = useAppState();
   const t = useTranslation(lang);
 
-  if (!mounted) return null;
 
   return (
     <div className="min-h-screen">

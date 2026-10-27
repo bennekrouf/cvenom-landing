@@ -28,18 +28,18 @@ export async function generateMetadata(): Promise<Metadata> {
       alternateLocale: 'fr_FR',
       images: [
         {
-          url: 'https://cvenom.com/og-image.png',
-          width: 1200,
-          height: 630,
+          url: 'https://cvenom.com/image/logo.png',
+          width: 1024,
+          height: 1024,
           alt: 'Cvenom — AI-powered CV generator',
         },
       ],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: 'summary',
       title: 'Cvenom — AI CV, Cover Letter & Portfolio Generator',
       description: 'CV, cover letter, portfolio in minutes. ATS-optimised. Start free.',
-      images: ['https://cvenom.com/og-image.png'],
+      images: ['https://cvenom.com/image/logo.png'],
     },
     robots: {
       index: true,
@@ -55,6 +55,30 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://cvenom.com/#organization',
+      name: 'Cvenom',
+      url: 'https://cvenom.com',
+      logo: 'https://cvenom.com/image/logo.png',
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://cvenom.com/#website',
+      name: 'Cvenom',
+      url: 'https://cvenom.com',
+      publisher: { '@id': 'https://cvenom.com/#organization' },
+      inLanguage: ['en', 'fr'],
+    },
+  ],
+}
+
+// Applies the saved theme before first paint, so server-rendered pages don't flash light
+const themeScript = `try{if(localStorage.getItem('cvenom-theme')==='dark')document.documentElement.classList.add('dark')}catch(e){}`
+
 export default function RootLayout({
   children,
 }: {
@@ -62,7 +86,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body>
         <PlausibleProvider domain="cvenom.com">
           {children}

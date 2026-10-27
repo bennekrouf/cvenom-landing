@@ -62,7 +62,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ lang: 'en' 
   const [post, setPost] = useState<BlogPost | null>(null);
   const [notFound, setNotFound] = useState(false);
 
-  const { theme, mobileMenuOpen, mounted, setMobileMenuOpen, toggleTheme } = useAppState();
+  const { theme, mobileMenuOpen, setMobileMenuOpen, toggleTheme } = useAppState();
   const t = useTranslation(lang);
 
   useEffect(() => {
@@ -79,7 +79,6 @@ export default function BlogPostPage({ params }: { params: Promise<{ lang: 'en' 
       .catch(() => setNotFound(true));
   }, [slug, lang]);
 
-  if (!mounted) return null;
 
   if (notFound) {
     return (
