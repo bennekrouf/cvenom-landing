@@ -5,7 +5,7 @@ date: "2026-10-27"
 author: "Cvenom Team"
 tags: ["tutoriel", "claude", "mcp", "jobscout", "recherche d'emploi"]
 lang: "fr"
-status: "draft"
+status: "published"
 ---
 
 # De la recherche d'emploi au CV adapté, dans une seule conversation Claude Desktop
@@ -17,8 +17,6 @@ Chercher des offres et adapter son CV à chacune, c'est d'habitude deux onglets,
 Claude demande à **JobScout** de chercher sur LinkedIn et les sites d'emploi nationaux, et de noter chaque offre par rapport à votre profil. Il transmet ensuite l'offre choisie à **cvenom**, qui adapte **votre vrai CV** et renvoie un PDF prêt à envoyer. Claude n'écrit jamais le CV lui-même : le contenu vient toujours de votre profil cvenom.
 
 Ce guide concerne **Claude Desktop** (macOS et Windows). Un guide pour Codex suivra, une fois le même parcours vérifié de ce côté.
-
-![Le parcours complet dans Claude Desktop : recherche, notation, puis CV adapté en PDF](/image/blog/jobscout-claude-desktop/00-overview.png)
 
 ## Ce qu'il vous faut
 
@@ -130,8 +128,6 @@ Demandez maintenant des offres :
 > *« Cherche des postes de senior backend engineer à Genève publiés la semaine dernière, puis note les nouveaux. »*
 
 JobScout cherche sur LinkedIn, jobs.ch et jobup.ch, garde les nouvelles offres et attribue à chacune une note, avec un verdict en une ligne, des points forts et des lacunes.
-
-![Claude liste les meilleures correspondances avec leur note](/image/blog/jobscout-claude-desktop/07-claude-search-score.png)
 
 La première fois que Claude utilise un outil, Claude Desktop vous demande l'autorisation. Choisissez **Always allow** pour les outils en lecture seule (lister et lire les offres, lire votre CV), et gardez la confirmation pour les autres si vous préférez.
 
