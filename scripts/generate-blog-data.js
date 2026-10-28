@@ -126,7 +126,8 @@ function collectPosts(dir, defaultLang) {
 
       const slug = slugify(filename.replace('.md', ''), { lower: true, strict: true });
       const stats = readingTime(content);
-      const html = mdToHtml(content);
+      // The page renders data.title as the <h1>; drop a leading "# Title" so it isn't shown twice
+      const html = mdToHtml(content.replace(/^\s*# .*\n/, ''));
 
       return {
         slug,
