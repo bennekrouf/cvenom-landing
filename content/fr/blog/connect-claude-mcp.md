@@ -39,7 +39,7 @@ Sur [Claude.ai](https://claude.ai), cliquez sur **Customize** (en haut à droite
 | MCP Server URL | `https://gateway.api0.ai/mcp/cvenom-mcp` |
 | OAuth Client ID | `cvenom-mcp` |
 
-L'OAuth Client ID se saisit dans **Advanced settings** ; laissez le client secret vide.
+Pour l'authentification, choisissez **Sign in now**, puis **Use your own OAuth client** : collez le Client ID et laissez le secret vide. Ne choisissez pas l'enregistrement automatique, même si Claude l'indique comme détecté.
 
 > Ne sautez pas le Client ID : sans lui, Claude vous connecte à un espace générique au lieu de cvenom, et vos profils n'apparaîtront pas.
 

@@ -39,7 +39,7 @@ In [Claude.ai](https://claude.ai), click **Customize** (top-right) → **Connect
 | MCP Server URL | `https://gateway.api0.ai/mcp/cvenom-mcp` |
 | OAuth Client ID | `cvenom-mcp` |
 
-The OAuth Client ID goes under **Advanced settings**; leave the client secret empty.
+Set Authentication to **Sign in now**, then choose **Use your own OAuth client**, paste the Client ID and leave the secret empty. Don't pick automatic registration, even if Claude marks it as detected.
 
 > Don't skip the Client ID: without it, Claude signs you in to a generic workspace instead of cvenom, and your profiles won't show up.
 
