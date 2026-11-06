@@ -70,7 +70,7 @@ In **Settings → Connectors**, add a custom connector:
 | Field | Value |
 |---|---|
 | MCP Server URL | `https://gateway.api0.ai/mcp/cvenom-mcp` |
-| OAuth Client ID | `cvenom-mcp` (under Advanced settings) |
+| OAuth Client ID | `cvenom-mcp` (choose **Use your own OAuth client**, no secret) |
 
 Click **Connect** and sign in with your cvenom Google account. Details in [Use Claude AI to manage your CVs](/en/blog/connect-claude-mcp).
 
